@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>田村新聞 2026.03.12</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:#f0ebe0;color:#111;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,sans-serif;font-size:14px;line-height:1.6;max-width:480px;margin:0 auto;}
+    .ticker-wrap{background:#cc0000;overflow:hidden;padding:6px 0;}
+    .ticker{display:flex;animation:ticker 40s linear infinite;white-space:nowrap;}
+    .ticker span{color:#fff;font-size:11px;font-weight:700;padding:0 30px;letter-spacing:.05em;}
+    @keyframes ticker{from{transform:translateX(100vw);}to{transform:translateX(-100%);}}
+    .masthead{background:#fff;border-bottom:4px solid #cc0000;padding:0;}
+    .masthead-banner{background:#111;padding:14px 14px 12px;display:flex;align-items:flex-end;justify-content:space-between;}
+    .paper-title{font-size:52px;font-weight:900;letter-spacing:-.02em;line-height:1;}
+    .paper-title .t1{color:#fff;}
+    .paper-title .t2{color:#cc0000;}
+    .masthead-right{text-align:right;}
+    .edition-badge{background:#cc0000;color:#fff;font-size:10px;font-weight:900;padding:2px 8px;border-radius:2px;display:inline-block;margin-bottom:5px;letter-spacing:.1em;}
+    .date-jp{font-size:12px;font-weight:700;color:#fff;}
+    .date-en{font-size:9px;color:#aaa;letter-spacing:.08em;}
+    .masthead-line{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:#f5f0e6;border-bottom:1px solid #ddd;font-size:9px;color:#666;letter-spacing:.06em;}
+    .scope-badge{background:#111;color:#fff;font-size:9px;font-weight:700;padding:1px 6px;border-radius:2px;}
+    .hero{position:relative;overflow:hidden;}
+    .hero-img{width:100%;height:220px;object-fit:cover;display:block;}
+    .hero-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));padding:20px 14px 14px;}
+    .hero-kicker{background:#cc0000;color:#fff;font-size:10px;font-weight:900;padding:2px 8px;border-radius:2px;display:inline-block;margin-bottom:6px;letter-spacing:.1em;}
+    .hero-headline{font-size:22px;font-weight:900;color:#fff;line-height:1.25;text-shadow:1px 1px 4px rgba(0,0,0,.6);}
+    .hero-sub{font-size:12px;color:#eee;margin-top:5px;}
+    .breaking-bar{background:#ffdd00;border-top:2px solid #cc0000;border-bottom:2px solid #cc0000;padding:7px 14px;display:flex;align-items:center;gap:8px;}
+    .breaking-label{background:#cc0000;color:#fff;font-size:10px;font-weight:900;padding:2px 7px;border-radius:2px;white-space:nowrap;}
+    .breaking-text{font-size:12px;font-weight:700;color:#111;}
+    .sec-head{background:#111;color:#fff;padding:8px 14px;display:flex;align-items:center;gap:8px;margin-top:10px;}
+    .sec-icon{font-size:18px;}
+    .sec-label{font-size:13px;font-weight:900;letter-spacing:.1em;}
+    .sec-num{margin-left:auto;font-size:10px;color:#aaa;}
+    .story{background:#fff;margin:2px 0;overflow:hidden;}
+    .story-img{width:100%;height:180px;object-fit:cover;display:block;}
+    .story-img.short{height:130px;}
+    .story-body{padding:12px 14px;}
+    .story-kicker{font-size:10px;font-weight:900;color:#cc0000;letter-spacing:.1em;margin-bottom:4px;}
+    .story-headline{font-size:17px;font-weight:900;line-height:1.3;margin-bottom:7px;}
+    .story-text{font-size:12px;color:#444;line-height:1.75;}
+    .story-text strong{color:#111;font-weight:700;}
+    .story-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px;}
+    .story-tag{background:#f0ebe0;border:1px solid #ccc;border-radius:20px;padding:2px 9px;font-size:10px;color:#555;}
+    .story-link{color:inherit;text-decoration:none;display:block;}
+    .story-link .story-headline{color:#111;}
+    .half-row{display:flex;gap:2px;margin-top:2px;}
+    .half{background:#fff;flex:1;overflow:hidden;}
+    .half-img{width:100%;height:110px;object-fit:cover;display:block;}
+    .half-body{padding:8px 10px 10px;}
+    .half-kicker{font-size:9px;font-weight:900;color:#cc0000;letter-spacing:.08em;margin-bottom:3px;}
+    .half-headline{font-size:13px;font-weight:900;line-height:1.3;}
+    .half-link{color:inherit;text-decoration:none;display:block;}
+    .half-link .half-headline{color:#111;}
+    .quote-box{background:#fff;border-left:5px solid #cc0000;margin:2px 0;padding:14px 14px 14px 18px;}
+    .quote-text{font-size:15px;font-weight:700;line-height:1.55;color:#111;}
+    .quote-text::before{content:'"';font-size:28px;color:#cc0000;line-height:0;vertical-align:-10px;margin-right:3px;}
+    .quote-text::after{content:'"';font-size:28px;color:#cc0000;line-height:0;vertical-align:-10px;margin-left:3px;}
+    .quote-src{font-size:10px;color:#888;margin-top:8px;}
+    .warn-bar{background:#ffdd00;border-top:3px solid #cc0000;border-bottom:3px solid #cc0000;padding:8px 14px;display:flex;align-items:center;gap:8px;margin:2px 0;}
+    .warn-icon{font-size:18px;}
+    .warn-text{font-size:12px;font-weight:700;color:#111;}
+    .rank-list{background:#fff;margin:2px 0;}
+    .rank-item{display:flex;align-items:center;padding:9px 14px;border-bottom:1px solid #f0ebe0;gap:12px;}
+    .rank-num{font-size:20px;font-weight:900;color:#cc0000;min-width:28px;}
+    .rank-num.gold{color:#d4a017;}
+    .rank-num.silver{color:#888;}
+    .rank-num.bronze{color:#a0522d;}
+    .rank-word{font-size:14px;font-weight:700;}
+    .rank-tag{margin-left:auto;font-size:10px;color:#888;}
+    .rank-tag.up{color:#cc0000;}
+    .rank-tag.new{background:#cc0000;color:#fff;padding:1px 6px;border-radius:10px;}
+    .num-bar{background:#fff;margin:2px 0;padding:12px 14px;}
+    .num-bar-title{font-size:10px;font-weight:700;color:#888;letter-spacing:.08em;margin-bottom:8px;}
+    .num-stats{display:flex;justify-content:space-around;text-align:center;}
+    .num-stat-val{font-size:26px;font-weight:900;color:#cc0000;line-height:1;}
+    .num-stat-unit{font-size:10px;color:#111;font-weight:700;}
+    .num-stat-label{font-size:9px;color:#888;margin-top:2px;}
+    .tool-grid{display:flex;flex-wrap:wrap;gap:2px;margin-top:2px;}
+    .tool-card{background:#fff;flex:0 0 calc(50% - 1px);padding:12px 12px;}
+    .tool-name{font-size:13px;font-weight:900;margin-bottom:4px;}
+    .tool-desc{font-size:11px;color:#555;line-height:1.5;}
+    .tool-badge{display:inline-block;background:#111;color:#fff;font-size:9px;padding:1px 6px;border-radius:10px;margin-top:5px;}
+    .tool-badge.new{background:#cc0000;}
+    .insight-box{background:#111;color:#fff;margin-top:10px;padding:16px 14px;}
+    .insight-title{font-size:13px;font-weight:900;letter-spacing:.15em;color:#cc0000;margin-bottom:12px;}
+    .insight-item{display:flex;gap:10px;margin-bottom:12px;align-items:flex-start;}
+    .insight-num{font-size:24px;font-weight:900;color:#cc0000;line-height:1;min-width:30px;}
+    .insight-text{font-size:13px;line-height:1.6;}
+    .insight-text strong{color:#ffdd00;}
+    .source-url{font-size:10px;color:#999;margin-top:8px;word-break:break-all;}
+    footer{background:#111;color:#fff;padding:18px 14px;margin-top:10px;text-align:center;}
+    .footer-title{font-size:22px;font-weight:900;letter-spacing:-.01em;}
+    .footer-title span{color:#cc0000;}
+    .footer-sub{font-size:10px;color:#aaa;margin-top:6px;line-height:1.7;}
+    .footer-copy{font-size:9px;color:#666;margin-top:10px;}
+    .story-link:hover .story-img,.half-link:hover .half-img{opacity:.9;}
+  .img-fallback{display:flex;align-items:center;justify-content:center;font-weight:900;color:rgba(255,255,255,0.55);font-size:13px;letter-spacing:.1em;text-align:center;padding:12px;text-shadow:0 1px 3px rgba(0,0,0,0.3);}
+  </style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>🔴 速報: BTS 5thフルアルバム『ARIRANG』3月20日リリース決定・東京ドーム2DAYS 4月17-18日</span>
+    <span>🤖 AI動画2強「Sora 2 vs Veo 3.1」2026年版コスト比較が公開され業界騒然</span>
+    <span>📱 YouTube 縦横同時ライブ配信機能リリース・Shortsフィードへ自動配信</span>
+    <span>🎤 VSPO! SHOWDOWN 2026 有明アリーナ2日間開催決定（3/21-22）</span>
+    <span>📊 世界広告市場2026年予測8,191億ドル・デジタル比率62%に</span>
+  </div>
+</div>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-banner">
+    <div class="paper-title"><span class="t1">田村</span><span class="t2">新聞</span></div>
+    <div class="masthead-right">
+      <div class="edition-badge">VOL.003 第3号</div>
+      <div class="date-jp">2026年3月12日（木）</div>
+      <div class="date-en">THURSDAY, MARCH 12, 2026</div>
+    </div>
+  </div>
+  <div class="masthead-line">
+    <span>MMT inc. DAILY CREATIVE INTELLIGENCE</span>
+    <span class="scope-badge">映像・ライブ・イベント映像制作</span>
+  </div>
+</div>
+
+<!-- HERO: BTS ARIRANG -->
+<a class="story-link" href="https://lignea.co.jp/bts-live/" target="_blank" rel="noopener">
+  <div class="hero">
+    <img class="hero-img" src="https://lignea.co.jp/wp-content/uploads/2024/06/LIGNEA%E3%82%A2%E3%82%A4%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81-90.jpg" alt="BTS ARIRANG"/>
+    <div class="hero-overlay">
+      <div class="hero-kicker">🔥 ライブ&エンタメ 最重要ニュース</div>
+      <div class="hero-headline">BTS 完全体ワールドツアー『ARIRANG』始動！東京ドーム2DAYS 4月17・18日開催決定</div>
+      <div class="hero-sub">新アルバム3/20リリース・史上最大規模34都市81公演・約7年ぶり完全体ライブ</div>
+    </div>
+  </div>
+  <div class="source-url">🔗 出典：lignea.co.jp｜BTSライブ2026｜ワールドツアー日程・チケット情報</div>
+</a>
+
+<div class="breaking-bar">
+  <div class="breaking-label">ALERT</div>
+  <div class="breaking-text">チケット2次選考3/2スタート済み・BTS史上最大規模のワールドツアー81公演</div>
+</div>
+
+<!-- SECTION 2: 映像クリエイティブ業界 -->
+<div class="sec-head"><span class="sec-icon">🎬</span><span class="sec-label">映像クリエイティブ業界</span><span class="sec-num">SEC.01</span></div>
+
+<a class="story-link" href="https://www.yano.co.jp/press-release/show/press_id/3919" target="_blank" rel="noopener">
+  <div class="story">
+    <img class="story-img" src="https://www.yano.co.jp/press/images/3919_0.jpg" alt="動画市場"/>
+    <div class="story-body">
+      <div class="story-kicker">市場動向</div>
+      <div class="story-headline">動画コンテンツ市場 2025年度6,300億円予測　企業向け動画需要が牽引</div>
+      <div class="story-text">矢野経済研究所の最新調査によると、国内動画コンテンツビジネス主要4市場の2025年度売上高は前年比105.3%の<strong>6,300億円</strong>と予測。企業のDX推進・動画マーケティング需要を背景にBtoBセグメントが拡大。一方、放送番組制作会社は売上前年比8.7%減の3,532億円と二極化が鮮明になっている。ドローン撮影や縦型対応など新サービスで差別化を図る中小制作会社の動きも注目。</div>
+      <div class="story-tags">
+        <span class="story-tag">#動画市場</span>
+        <span class="story-tag">#映像制作</span>
+        <span class="story-tag">#企業動画</span>
+        <span class="story-tag">#DX</span>
+      </div>
+      <div class="source-url">🔗 出典：矢野経済研究所｜動画コンテンツビジネスに関する調査（2025年）</div>
+    </div>
+  </div>
+</a>
+
+<div class="half-row">
+  <a class="half-link" href="https://masouken.com/%E6%98%A0%E5%83%8F%E5%88%B6%E4%BD%9C%E6%A5%AD%E7%95%8C%E3%81%AEM&A%E5%8B%95%E5%90%91" target="_blank" rel="noopener">
+    <div class="half">
+      <img class="half-img" src="https://s3-ap-northeast-1.amazonaws.com/cdn.ma-site.com/production/posts/eyecatches/000/001/736/medium.jpg" alt="M&A"/>
+      <div class="half-body">
+        <div class="half-kicker">業界再編</div>
+        <div class="half-headline">映像制作M&A加速　アニメ制作会社の子会社化が続出</div>
+        <div class="source-url">🔗 出典：M&A総合研究所</div>
+      </div>
+    </div>
+  </a>
+  <a class="half-link" href="https://service.xenobrain.jp/forecastresults/market-size/video-content-production" target="_blank" rel="noopener">
+    <div class="half">
+      <img class="half-img" src="https://storage.googleapis.com/studio-cms-assets/projects/1pqDjLb6Wj/s-1200x630_v-fms_webp_0ba3a8e5-90be-4d3e-8d9d-367e98f509bf.jpg" alt="AI予測"/>
+      <div class="half-body">
+        <div class="half-kicker">AI予測</div>
+        <div class="half-headline">AI予測：動画制作業界2030年7,468億ドル規模に拡大</div>
+        <div class="source-url">🔗 出典：xenobrain.jp</div>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- SECTION 3: SNS動向 -->
+<div class="sec-head"><span class="sec-icon">📱</span><span class="sec-label">SNS動向</span><span class="sec-num">SEC.02</span></div>
+
+<div class="quote-box">
+  <div class="quote-text">YouTubeが横向き・縦向き同時ライブ配信を解禁。1回の配信でShortsフィードにも同時掲載される時代に突入</div>
+  <div class="quote-src">📌 YouTube クリエイター向け最新情報より</div>
+</div>
+
+<a class="story-link" href="https://www.comnico.jp/we-love-social/sns-news" target="_blank" rel="noopener">
+  <div class="story">
+    <img class="story-img short" src="https://www.comnico.jp/hubfs/WLS_blog/202312/snsnews/wls_SNS-news.webp" alt="SNS更新"/>
+    <div class="story-body">
+      <div class="story-kicker">プラットフォーム最新情報</div>
+      <div class="story-headline">YouTube「縦横同時ライブ配信」＆TikTok Shop Local始動・Instagram Google TV対応</div>
+      <div class="story-text">YouTubeはライブ配信の横向き・縦向き<strong>同時配信機能</strong>を正式リリース、自動でShortsフィードに展開。TikTokは「Shop Local」プロジェクトを3月開始、地域中小企業支援に本腰。InstagramはGoogle TVでのリール視聴を追加し、テレビ視聴者へのリーチが可能に。また国内YouTubeに<strong>ショッピングアフィリエイト</strong>が解禁（楽天市場連携）、クリエイターの収益経路が拡大した。</div>
+      <div class="story-tags">
+        <span class="story-tag">#YouTube</span>
+        <span class="story-tag">#TikTok</span>
+        <span class="story-tag">#Instagram</span>
+        <span class="story-tag">#ショッピング</span>
+      </div>
+      <div class="source-url">🔗 出典：comnico.jp｜2026年3月版 SNSニュースまとめ</div>
+    </div>
+  </div>
+</a>
+
+<div class="warn-bar">
+  <span class="warn-icon">⚠️</span>
+  <span class="warn-text">Instagram ハッシュタグが最大5個制限に変更。多投稿戦略は即効停止を</span>
+</div>
+
+<!-- SECTION 4: 検索ワードランキング -->
+<div class="sec-head"><span class="sec-icon">🔍</span><span class="sec-label">検索ワードランキング</span><span class="sec-num">SEC.03</span></div>
+<div class="rank-list">
+  <div class="rank-item">
+    <span class="rank-num gold">1</span>
+    <span class="rank-word">BTS ARIRANG ワールドツアー</span>
+    <span class="rank-tag new">NEW</span>
+  </div>
+  <div class="rank-item">
+    <span class="rank-num silver">2</span>
+    <span class="rank-word">Sora 2 Veo 3.1 比較</span>
+    <span class="rank-tag new">NEW</span>
+  </div>
+  <div class="rank-item">
+    <span class="rank-num bronze">3</span>
+    <span class="rank-word">hololive 7th fes チケット</span>
+    <span class="rank-tag up">↑2</span>
+  </div>
+  <div class="rank-item">
+    <span class="rank-num">4</span>
+    <span class="rank-word">AI動画生成 商用利用</span>
+    <span class="rank-tag up">↑1</span>
+  </div>
+  <div class="rank-item">
+    <span class="rank-num">5</span>
+    <span class="rank-word">縦型動画広告 費用対効果</span>
+    <span class="rank-tag">→</span>
+  </div>
+  <div class="rank-item">
+    <span class="rank-num">6</span>
+    <span class="rank-word">TikTok Shop 出店方法</span>
+    <span class="rank-tag up">↑3</span>
+  </div>
+  <div class="rank-item">
+    <span class="rank-num">7</span>
+    <span class="rank-word">VSPO SHOWDOWN 2026 チケット</span>
+    <span class="rank-tag new">NEW</span>
+  </div>
+  <div class="rank-item">
+    <span class="rank-num">8</span>
+    <span class="rank-word">YouTube Shorts 収益化 条件</span>
+    <span class="rank-tag">→</span>
+  </div>
+</div>
+
+<!-- SECTION 5: 投稿・コンテンツムーブメント -->
+<div class="sec-head"><span class="sec-icon">📲</span><span class="sec-label">投稿・コンテンツムーブメント</span><span class="sec-num">SEC.04</span></div>
+
+<a class="story-link" href="https://bloomeria.jp/blog/youtube-shorts-monetization-guide" target="_blank" rel="noopener">
+  <div class="story">
+    <img class="story-img" src="https://bloomeria.jp/images/streaming-business/youtube-shorts-monetization.webp" alt="ショートドラマ"/>
+    <div class="story-body">
+      <div class="story-kicker">コンテンツトレンド</div>
+      <div class="story-headline">TikTokショートドラマが新コンテンツ定番に　縦型動画広告は2026年比率80%超えへ</div>
+      <div class="story-text">2024年上半期から急拡大した「TikTokショートドラマ」が企業マーケティングに定着。1本数分で感情を揺さぶる縦型ドラマは<strong>視聴完了率・購買転換率</strong>ともに通常動画広告を上回る結果が続出。2026年のデジタル広告は縦型動画比率が80%超えと予測されており、MMTが担う縦型コンテンツ制作の需要は一段と強まっている。YouTube Shorts収益化の条件緩和（過去90日1,000万回再生）も追い風。</div>
+      <div class="story-tags">
+        <span class="story-tag">#ショートドラマ</span>
+        <span class="story-tag">#縦型動画</span>
+        <span class="story-tag">#コンテンツマーケ</span>
+      </div>
+      <div class="source-url">🔗 出典：bloomeria.jp｜YouTube Shorts収益化完全ガイド 2026年最新</div>
+    </div>
+  </div>
+</a>
+
+<div class="warn-bar">
+  <span class="warn-icon">⚡</span>
+  <span class="warn-text">Shorts最大尺が60秒→3分に拡大済み。「長め縦型」コンテンツへの対応が急務</span>
+</div>
+
+<!-- SECTION 6: VTuber/Vsinger -->
+<div class="sec-head"><span class="sec-icon">🎭</span><span class="sec-label">VTuber / Vsinger</span><span class="sec-num">SEC.05</span></div>
+
+<a class="story-link" href="https://uyet.jp/media/vtuber-insights/vtubernews-2025/" target="_blank" rel="noopener">
+  <div class="story">
+    <img class="story-img" src="https://uyet.jp/media/wp-content/uploads/2025/12/af8880f32f9275d5f62f9c2b65b3e06b.png" alt="hololive"/>
+    <div class="story-body">
+      <div class="story-kicker">LIVE REPORT</div>
+      <div class="story-headline">hololive 7th fes. "Ridin' on Dreams" 初の3日間開催で3/6-8完走　にじホロ交流戦2025も5月に発表</div>
+      <div class="story-text">「hololive SUPER EXPO 2026」と「hololive 7th fes. Ridin' on Dreams」が<strong>史上初の3日間開催</strong>として3月6〜8日に幕を閉じた。過去最高動員を記録し、ライブ映像制作・Vキャラクター展開のニーズが改めて証明された形に。また「にじホロ交流戦2025」が5月開催予定と発表。にじさんじ×ホロライブの共演は映像制作・配信ビジネスの大型商機となる見通し。</div>
+      <div class="story-tags">
+        <span class="story-tag">#hololive</span>
+        <span class="story-tag">#VTuber</span>
+        <span class="story-tag">#ライブ映像</span>
+      </div>
+      <div class="source-url">🔗 出典：uyet.jp｜VTuber業界・市場のニュースまとめ2025年版</div>
+    </div>
+  </div>
+</a>
+
+<div class="half-row">
+  <a class="half-link" href="https://vr-sampo.com/vtuber-event/" target="_blank" rel="noopener">
+    <div class="half">
+      <img class="half-img" src="https://vr-sampo.com/wp-content/uploads/2024/05/vtuber-event_kv.jpg" alt="VSPO"/>
+      <div class="half-body">
+        <div class="half-kicker">eSPORTS LIVE</div>
+        <div class="half-headline">VSPO! SHOWDOWN 2026 有明アリーナで3/21-22開催</div>
+        <div class="source-url">🔗 出典：vr-sampo.com</div>
+      </div>
+    </div>
+  </a>
+  <a class="half-link" href="https://panora.tokyo/archives/130559" target="_blank" rel="noopener">
+    <div class="half">
+      <img class="half-img" src="https://asset.panora.tokyo/wp-content/uploads/2026/01/26120719/109030-105-928e8c3a3e525442091828749767927b-1920x1080-1.webp" alt="MRライブ"/>
+      <div class="half-body">
+        <div class="half-kicker">技術革新</div>
+        <div class="half-headline">にじさんじ×stu リアルタイムMRライブシステム詳細公開</div>
+        <div class="source-url">🔗 出典：panora.tokyo</div>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- SECTION 7: ライブ・イベント業界 -->
+<div class="sec-head"><span class="sec-icon">🎤</span><span class="sec-label">ライブ・イベント業界</span><span class="sec-num">SEC.06</span></div>
+
+<a class="story-link" href="https://www.wowkorea.jp/guide/event/" target="_blank" rel="noopener">
+  <div class="story">
+    <img class="story-img" src="https://www.wowkorea.jp/images/Header_Image/k-event.jpg" alt="K-POP市場"/>
+    <div class="story-body">
+      <div class="story-kicker">K-POP 市場拡大</div>
+      <div class="story-headline">K-POP市場2026年178億ドル（約2.67兆円）・前年比34%増　BTS効果でライブ需要急騰</div>
+      <div class="story-text">BTS完全体カムバックが正式確定し、グローバルK-POP市場規模は<strong>2024年比34%増の178億ドル</strong>に達する見込み。東京ドーム2公演で5万人超の動員が見込まれ、ライブ映像制作・イベント映像の商機が急拡大。LE SSERAFIMやTOMORROW X TOGETHERのカムバックも相次ぎ、3月は日本のK-POPイベント業界が史上最高水準の活況を迎えている。</div>
+      <div class="story-tags">
+        <span class="story-tag">#BTS</span>
+        <span class="story-tag">#K-POP</span>
+        <span class="story-tag">#ライブ映像</span>
+        <span class="story-tag">#東京ドーム</span>
+      </div>
+      <div class="source-url">🔗 出典：wowkorea.jp｜2026年日本開催K-POPコンサート・韓流イベントまとめ</div>
+    </div>
+  </div>
+</a>
+
+<div class="half-row">
+  <a class="half-link" href="https://en.birthdayadjp.shop/blogs/k-pop-special/bts-live2026" target="_blank" rel="noopener">
+    <div class="half">
+      <img class="half-img" src="https://birthdayadjp.shop/cdn/shop/articles/2_1_d9a51c29-9167-416a-8bca-bdbf64a8ad47_1200x630.png" alt="BTS東京"/>
+      <div class="half-body">
+        <div class="half-kicker">公演情報</div>
+        <div class="half-headline">BTS 東京ドーム4/17(金)・18(土) 2DAYS 7年ぶり完全体</div>
+        <div class="source-url">🔗 出典：birthdayadjp.shop</div>
+      </div>
+    </div>
+  </a>
+  <a class="half-link" href="https://kpopisnet.com/archives/6119" target="_blank" rel="noopener">
+    <div class="half">
+      <img class="half-img" src="https://kpopisnet.com/wp-content/uploads/2024/09/ogp.png" alt="K-POP各社"/>
+      <div class="half-body">
+        <div class="half-kicker">アーティスト動向</div>
+        <div class="half-headline">HYBE・JYP・SM・YG 2026年日本公演情報一覧まとめ</div>
+        <div class="source-url">🔗 出典：kpopisnet.com</div>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div class="quote-box">
+  <div class="quote-text">BTSの7年ぶり完全体ライブは、ライブ映像・アーカイブ映像の需要を一気に押し上げる。今がMMTの提案タイミング</div>
+  <div class="quote-src">📌 田村新聞 編集部より</div>
+</div>
+
+<!-- SECTION 8: 縦型動画トレンド -->
+<div class="sec-head"><span class="sec-icon">📐</span><span class="sec-label">縦型動画トレンド</span><span class="sec-num">SEC.07</span></div>
+
+<a class="story-link" href="https://dfplus.io/blog/vertical-short-video-ads-20250326" target="_blank" rel="noopener">
+  <div class="story">
+    <img class="story-img" src="https://storage.googleapis.com/studio-cms-assets/projects/1Va6d4L2O7/s-2400x1260_v-frms_webp_46d478a7-eaf8-437a-a6c9-4e16c8fc26da.png" alt="縦型動画広告"/>
+    <div class="story-body">
+      <div class="story-kicker">広告トレンド</div>
+      <div class="story-headline">縦型ショート動画広告が前年比170%超　2026年はクリエイティブの「縦型ファースト」時代へ</div>
+      <div class="story-text">YouTube Shorts・TikTok・Instagram Reelsをまたぐ縦型動画広告市場は<strong>前年比170%超</strong>の急成長。2026年の動画広告市場では縦型比率が80%を突破する見通しで、横型動画は補完的な役割に転換しつつある。制作現場では「<strong>縦型ファースト</strong>」の撮影設計が標準になりつつあり、MMTのような映像制作会社が縦型演出・縦型編集に特化したパッケージを持つことが競争優位の鍵に。</div>
+      <div class="story-tags">
+        <span class="story-tag">#縦型動画</span>
+        <span class="story-tag">#Shorts</span>
+        <span class="story-tag">#Reels</span>
+        <span class="story-tag">#動画広告</span>
+      </div>
+      <div class="source-url">🔗 出典：dfplus.io｜縦型ショート動画広告のトレンドと運用のコツ</div>
+    </div>
+  </div>
+</a>
+
+<div class="num-bar">
+  <div class="num-bar-title">📊 縦型動画 KEY NUMBERS 2026</div>
+  <div class="num-stats">
+    <div>
+      <div class="num-stat-val">80<span class="num-stat-unit">%</span></div>
+      <div class="num-stat-label">動画広告に占める縦型比率予測</div>
+    </div>
+    <div>
+      <div class="num-stat-val">3<span class="num-stat-unit">分</span></div>
+      <div class="num-stat-label">YouTube Shorts最大尺（60秒→3分）</div>
+    </div>
+    <div>
+      <div class="num-stat-val">170<span class="num-stat-unit">%</span></div>
+      <div class="num-stat-label">縦型動画広告市場の前年比成長率</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 9: AI×映像制作ツール -->
+<div class="sec-head"><span class="sec-icon">🤖</span><span class="sec-label">AI×映像制作ツール</span><span class="sec-num">SEC.08</span></div>
+
+<a class="story-link" href="https://modelslab.com/blog/api/veo-3-1-vs-kling-3-sora-2-ai-video-api-cost-2026" target="_blank" rel="noopener">
+  <div class="story">
+    <img class="story-img" src="https://assets.modelslab.com/blog/discover-legacy/2026/03/veo-3-1-vs-kling-3-sora-2-ai-video-api-cost-2026-discover.png" alt="AI動画生成"/>
+    <div class="story-body">
+      <div class="story-kicker">AIツール最前線</div>
+      <div class="story-headline">AI動画生成「Sora 2 vs Veo 3.1」2強時代　映像制作コスト・品質比較2026年版が公開</div>
+      <div class="story-text"><strong>OpenAI Sora 2</strong>と<strong>Google Veo 3.1</strong>が2026年AI動画生成の2強として確立。Sora 2は映像・音声の統合生成と物理法則の精度に優れCM・プロモ映像向け。Veo 3.1は最大1分動画生成・動きの自然さで評価が高く、YouTube向けコンテンツに強い。Kling 2.6は速度特化でShortsやReelsの量産に最適、Runwayは細かな演出コントロールが必要なナラティブ映像に適している。APIコスト比較の最新版が公開され業界の注目を集めている。</div>
+      <div class="story-tags">
+        <span class="story-tag">#Sora2</span>
+        <span class="story-tag">#Veo3</span>
+        <span class="story-tag">#AI動画</span>
+        <span class="story-tag">#映像制作AI</span>
+      </div>
+      <div class="source-url">🔗 出典：modelslab.com｜Veo 3.1 vs Kling 3.0 vs Sora 2 AI動画APIコスト比較2026</div>
+    </div>
+  </div>
+</a>
+
+<div class="tool-grid">
+  <div class="tool-card">
+    <div class="tool-name">🎬 Sora 2</div>
+    <div class="tool-desc">映像＋音声統合生成。CM・プロモ映像の最高品質。物理法則の精度が抜群</div>
+    <span class="tool-badge new">最高品質</span>
+  </div>
+  <div class="tool-card">
+    <div class="tool-name">🎞 Veo 3.1</div>
+    <div class="tool-desc">Google製。最大1分動画生成・動きの自然さで評価。YouTube向けに最適</div>
+    <span class="tool-badge new">長尺対応</span>
+  </div>
+  <div class="tool-card">
+    <div class="tool-name">⚡ Kling 2.6</div>
+    <div class="tool-desc">中国・快手製。Shorts/Reels量産に最適。速度チャンピオン、コスパ最強</div>
+    <span class="tool-badge">量産向け</span>
+  </div>
+  <div class="tool-card">
+    <div class="tool-name">🖥 Runway Gen-4</div>
+    <div class="tool-desc">キャラ一貫性・細かな演出コントロールが必要なナラティブ映像制作に強い</div>
+    <span class="tool-badge">演出特化</span>
+  </div>
+</div>
+
+<!-- SECTION 10: 海外トレンド -->
+<div class="sec-head"><span class="sec-icon">🌏</span><span class="sec-label">海外クリエイティブトレンド</span><span class="sec-num">SEC.09</span></div>
+
+<a class="story-link" href="https://advertising.amazon.com/ja-jp/library/news/marketing-trends-2026" target="_blank" rel="noopener">
+  <div class="story">
+    <img class="story-img" src="https://m.media-amazon.com/images/G/01/AdProductsWebsite/images/refreshed-all-purpose-2024/ads-SEP2025-brand_photo_connected_consumer_general_portrait_02AB_2539_D.jpg" alt="グローバル広告市場"/>
+    <div class="story-body">
+      <div class="story-kicker">グローバル市場</div>
+      <div class="story-headline">世界広告市場2026年8,191億ドル予測　デジタル比率62%・ストリーミングが全TV視聴の44.8%占める</div>
+      <div class="story-text">電通グループの最新予測によると2026年の世界広告市場は前年比4.2%成長で<strong>8,191億米ドル</strong>に達する見通し。デジタル広告比率は62%に到達し、特にリテールメディア・ペイドソーシャル・プログラマティックが高成長。ストリーミングが全TV視聴の<strong>44.8%</strong>を占めるなか、インタラクティブ動画広告への移行が加速。視聴者の79%が標準動画より魅力的と評価するインタラクティブ広告がグローバルスタンダードになりつつある。</div>
+      <div class="story-tags">
+        <span class="story-tag">#グローバル広告</span>
+        <span class="story-tag">#ストリーミング</span>
+        <span class="story-tag">#デジタル広告</span>
+        <span class="story-tag">#CTV</span>
+      </div>
+      <div class="source-url">🔗 出典：Amazon Ads｜2026年の5つのトップマーケティングトレンド</div>
+    </div>
+  </div>
+</a>
+
+<!-- SECTION 11: 競合・同業者動向 -->
+<div class="sec-head"><span class="sec-icon">🏢</span><span class="sec-label">競合・同業者動向</span><span class="sec-num">SEC.10</span></div>
+
+<div class="half-row">
+  <a class="half-link" href="https://masouken.com/%E6%98%A0%E5%83%8F%E5%88%B6%E4%BD%9C%E6%A5%AD%E7%95%8C%E3%81%AEM&A%E5%8B%95%E5%90%91" target="_blank" rel="noopener">
+    <div class="half">
+      <img class="half-img" src="https://s3-ap-northeast-1.amazonaws.com/cdn.ma-site.com/production/posts/eyecatches/000/001/736/medium.jpg" alt="競合M&A"/>
+      <div class="half-body">
+        <div class="half-kicker">業界動向</div>
+        <div class="half-headline">映像制作会社のM&A・子会社化が2026年に急増　スキル格差が買収理由に</div>
+        <div class="source-url">🔗 出典：M&A総合研究所</div>
+      </div>
+    </div>
+  </a>
+  <a class="half-link" href="https://mvsk.jp/column/190139" target="_blank" rel="noopener">
+    <div class="half">
+      <img class="half-img" src="https://mvsk.jp/wp-content/uploads/2024/06/video-content-market-size.jpg" alt="動画制作サービス"/>
+      <div class="half-body">
+        <div class="half-kicker">サービス競争</div>
+        <div class="half-headline">大手映像制作会社がAI×縦型動画パッケージを続々投入　中小は差別化が急務</div>
+        <div class="source-url">🔗 出典：ムビサク｜動画コンテンツ市場規模2026年最新</div>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- SECTION 12: TODAY'S INSIGHT -->
+<div class="insight-box">
+  <div class="insight-title">💡 TODAY'S INSIGHT — MMTが今日動くべき4つのこと</div>
+  <div class="insight-item">
+    <div class="insight-num">01</div>
+    <div class="insight-text"><strong>BTSツアー映像制作の提案を即座に</strong>　東京ドーム2DAYS（4/17-18）はリハ・本番・オフショット・アーカイブ映像の商機。今週中に提案書を準備せよ。K-POP各社（HYBE/JYP/SM/YG）の日本公演も続くため、縦型映像パッケージで先行提案が優位。</div>
+  </div>
+  <div class="insight-item">
+    <div class="insight-num">02</div>
+    <div class="insight-text"><strong>縦型動画専用プランを今月中に整備</strong>　縦型比率80%超え予測と3分Shorts拡大を受け、MMTが「縦型ファースト映像制作」を正式サービス化するタイミング。TikTokショートドラマ・Shorts対応パッケージの料金表作成を優先。</div>
+  </div>
+  <div class="insight-item">
+    <div class="insight-num">03</div>
+    <div class="insight-text"><strong>Sora 2 / Veo 3.1 の試験導入でコスト競争力を強化</strong>　AIツール2強が出揃った今がMMTのAI制作フロー構築チャンス。まず社内テスト（CM尺15秒・30秒の自動生成）を実施し、クライアントへのデモ提案資料を作成。Kling 2.6もShortsの量産用に実験着手を。</div>
+  </div>
+  <div class="insight-item">
+    <div class="insight-num">04</div>
+    <div class="insight-text"><strong>VTuber・MRライブ映像の受注体制を構築</strong>　にじさんじ×stuのリアルタイムMRライブシステム公開でVライブの映像技術需要が急増。VSPO! SHOWDOWN 2026（有明アリーナ 3/21-22）など大型案件が続く。MRライブ映像の制作事例を今のうちにポートフォリオ化し、次の商談に備えよ。</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-title">田村<span>新聞</span></div>
+  <div class="footer-sub">
+    MMT inc. DAILY CREATIVE INTELLIGENCE<br/>
+    VOL.003 ｜ 2026年3月12日（木）発行<br/>
+    映像・ライブ・イベント映像制作の最前線情報をお届け
+  </div>
+  <div class="footer-copy">
+    © 2026 田村新聞 / MMT inc. All rights reserved.<br/>
+    <a href="archive.html" style="color:#cc0000;text-decoration:none;">📚 バックナンバーはこちら</a>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+var gs=["linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%)","linear-gradient(135deg,#2d1b69 0%,#11998e 100%)","linear-gradient(135deg,#0c0c0c 0%,#333 50%,#1a1a1a 100%)","linear-gradient(135deg,#cc0000 0%,#660000 100%)","linear-gradient(135deg,#003d5b 0%,#00838f 100%)","linear-gradient(135deg,#4a148c 0%,#7b1fa2 100%)"];
+var i=0;
+document.querySelectorAll("img").forEach(function(img){
+function fix(){
+var d=document.createElement("div");
+d.className=img.className+" img-fallback";
+d.style.background=gs[i%gs.length];
+var t=img.alt||"";
+if(t.length>20)t=t.substring(0,20)+"…";
+d.textContent=t;
+img.parentNode.replaceChild(d,img);
+i++;
+}
+img.addEventListener("error",fix);
+if(img.complete&&img.naturalWidth===0&&img.src)fix();
+});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>田村新聞 創刊号 2026.03.10</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:#f0ebe0;color:#111;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,sans-serif;font-size:14px;line-height:1.6;max-width:480px;margin:0 auto;}
+    .ticker-wrap{background:#cc0000;overflow:hidden;padding:6px 0;}
+    .ticker{display:flex;animation:ticker 30s linear infinite;white-space:nowrap;}
+    .ticker span{color:#fff;font-size:11px;font-weight:700;padding:0 30px;letter-spacing:.05em;}
+    @keyframes ticker{from{transform:translateX(100vw);}to{transform:translateX(-100%);}}
+    .masthead{background:#fff;border-bottom:4px solid #cc0000;padding:0;}
+    .masthead-banner{background:#111;padding:14px 14px 12px;display:flex;align-items:flex-end;justify-content:space-between;}
+    .paper-title{font-size:52px;font-weight:900;letter-spacing:-.02em;line-height:1;}
+    .paper-title .t1{color:#fff;}
+    .paper-title .t2{color:#cc0000;}
+    .masthead-right{text-align:right;}
+    .edition-badge{background:#cc0000;color:#fff;font-size:10px;font-weight:900;padding:2px 8px;border-radius:2px;display:inline-block;margin-bottom:5px;letter-spacing:.1em;}
+    .soukan-badge{background:#ffdd00;color:#111;font-size:10px;font-weight:900;padding:2px 8px;border-radius:2px;display:inline-block;margin-bottom:4px;letter-spacing:.1em;}
+    .date-jp{font-size:12px;font-weight:700;color:#fff;}
+    .date-en{font-size:9px;color:#aaa;letter-spacing:.08em;}
+    .masthead-line{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:#f5f0e6;border-bottom:1px solid #ddd;font-size:9px;color:#666;letter-spacing:.06em;}
+    .scope-badge{background:#111;color:#fff;font-size:9px;font-weight:700;padding:1px 6px;border-radius:2px;}
+    .hero{position:relative;overflow:hidden;}
+    .hero-img{width:100%;height:220px;object-fit:cover;display:block;}
+    .hero-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));padding:20px 14px 14px;}
+    .hero-kicker{background:#cc0000;color:#fff;font-size:10px;font-weight:900;padding:2px 8px;border-radius:2px;display:inline-block;margin-bottom:6px;letter-spacing:.1em;}
+    .hero-headline{font-size:22px;font-weight:900;color:#fff;line-height:1.25;text-shadow:1px 1px 4px rgba(0,0,0,.6);}
+    .hero-sub{font-size:12px;color:#eee;margin-top:5px;}
+    .breaking-bar{background:#ffdd00;border-top:2px solid #cc0000;border-bottom:2px solid #cc0000;padding:7px 14px;display:flex;align-items:center;gap:8px;}
+    .breaking-label{background:#cc0000;color:#fff;font-size:10px;font-weight:900;padding:2px 7px;border-radius:2px;white-space:nowrap;}
+    .breaking-text{font-size:12px;font-weight:700;color:#111;}
+    .sec-head{background:#111;color:#fff;padding:8px 14px;display:flex;align-items:center;gap:8px;margin-top:10px;}
+    .sec-icon{font-size:18px;}
+    .sec-label{font-size:13px;font-weight:900;letter-spacing:.1em;}
+    .sec-num{margin-left:auto;font-size:10px;color:#aaa;}
+    .story{background:#fff;margin:2px 0;overflow:hidden;}
+    .story-img{width:100%;height:180px;object-fit:cover;display:block;}
+    .story-img.short{height:130px;}
+    .story-body{padding:12px 14px;}
+    .story-kicker{font-size:10px;font-weight:900;color:#cc0000;letter-spacing:.1em;margin-bottom:4px;}
+    .story-headline{font-size:17px;font-weight:900;line-height:1.3;margin-bottom:7px;}
+    .story-text{font-size:12px;color:#444;line-height:1.75;}
+    .story-text strong{color:#111;font-weight:700;}
+    .story-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px;}
+    .story-tag{background:#f0ebe0;border:1px solid #ccc;border-radius:20px;padding:2px 9px;font-size:10px;color:#555;}
+    .story-link{color:inherit;text-decoration:none;display:block;}
+    .story-link .story-headline{color:#111;}
+    .story-link:hover .story-headline{color:#cc0000;text-decoration:underline;}
+    .link-badge{display:inline-block;background:#cc0000;color:#fff;font-size:9px;font-weight:900;padding:1px 5px;border-radius:2px;margin-left:6px;vertical-align:middle;letter-spacing:.05em;}
+    .half-link{color:inherit;text-decoration:none;display:block;}
+    .half-link:hover .half-headline{color:#cc0000;text-decoration:underline;}
+    .source-url{font-size:10px;color:#cc0000;margin-top:6px;border-top:1px dashed #eee;padding-top:5px;}
+    .half-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin:2px 0;}
+    .half-card{background:#fff;overflow:hidden;}
+    .half-img{width:100%;height:110px;object-fit:cover;display:block;}
+    .half-body{padding:10px 10px 12px;}
+    .half-kicker{font-size:9px;font-weight:900;color:#cc0000;letter-spacing:.08em;margin-bottom:3px;}
+    .half-headline{font-size:13px;font-weight:900;line-height:1.3;margin-bottom:5px;}
+    .half-text{font-size:11px;color:#555;line-height:1.6;}
+    .ranking-wrap{background:#fff;margin:2px 0;padding:14px;}
+    .rank-title{font-size:15px;font-weight:900;margin-bottom:10px;color:#111;}
+    .rank-item{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px dashed #ddd;}
+    .rank-item:last-child{border-bottom:none;}
+    .rank-num{font-size:22px;font-weight:900;color:#ccc;min-width:30px;text-align:center;line-height:1;}
+    .rank-num.r1{color:#cc0000;font-size:28px;}
+    .rank-num.r2{color:#e87722;}
+    .rank-num.r3{color:#e8a500;}
+    .rank-content{flex:1;}
+    .rank-word{font-size:14px;font-weight:700;}
+    .rank-desc{font-size:11px;color:#888;margin-top:2px;}
+    .rank-arrow{font-size:18px;}
+    .rank-up{color:#cc0000;}
+    .rank-stay{color:#aaa;}
+    .quote-box{background:#cc0000;color:#fff;margin:2px 0;padding:16px 14px;}
+    .quote-label{font-size:9px;font-weight:900;letter-spacing:.15em;opacity:.8;margin-bottom:6px;}
+    .quote-text{font-size:18px;font-weight:900;line-height:1.4;}
+    .quote-source{font-size:10px;opacity:.7;margin-top:8px;}
+    .tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin:2px 0;}
+    .tool-card{background:#fff;padding:14px;text-align:center;}
+    .tool-emoji{font-size:28px;margin-bottom:6px;}
+    .tool-name{font-size:13px;font-weight:900;margin-bottom:3px;}
+    .tool-desc{font-size:10px;color:#666;line-height:1.5;}
+    .tool-new{display:inline-block;background:#cc0000;color:#fff;font-size:9px;font-weight:900;padding:1px 5px;border-radius:2px;margin-bottom:4px;}
+    .insight{background:#111;color:#fff;margin:10px 0 2px;padding:0;overflow:hidden;}
+    .insight-head{background:#cc0000;padding:10px 14px;display:flex;align-items:center;gap:8px;}
+    .insight-head-icon{font-size:20px;}
+    .insight-head-title{font-size:14px;font-weight:900;letter-spacing:.08em;}
+    .insight-head-sub{font-size:10px;opacity:.85;margin-left:auto;}
+    .insight-body{padding:14px;}
+    .insight-item{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #333;}
+    .insight-item:last-child{border-bottom:none;}
+    .insight-num{font-size:24px;font-weight:900;color:#cc0000;min-width:32px;text-align:center;line-height:1.1;}
+    .insight-ttl{font-size:14px;font-weight:900;margin-bottom:4px;}
+    .insight-txt{font-size:12px;color:#bbb;line-height:1.7;}
+    .insight-txt strong{color:#fff;}
+    .alert-yellow{background:#ffdd00;border-left:5px solid #cc0000;margin:2px 0;padding:12px 14px;}
+    .alert-yellow-label{font-size:9px;font-weight:900;color:#cc0000;letter-spacing:.1em;margin-bottom:4px;}
+    .alert-yellow-text{font-size:14px;font-weight:900;color:#111;line-height:1.4;}
+    footer{background:#111;color:#fff;padding:18px 14px;margin-top:10px;text-align:center;}
+    .footer-title{font-size:18px;font-weight:900;margin-bottom:4px;}
+    .footer-title span{color:#cc0000;}
+    .footer-url{font-size:11px;color:#cc0000;margin-bottom:6px;}
+    .footer-div{height:1px;background:#333;margin:10px 0;}
+    .footer-info{font-size:10px;color:#888;line-height:1.7;}
+    .archive-btn{display:inline-block;margin-top:12px;background:#333;color:#fff;font-size:12px;font-weight:700;padding:8px 20px;border-radius:3px;text-decoration:none;letter-spacing:.05em;}
+    .archive-btn:hover{background:#cc0000;}
+    .back-btn{display:inline-block;margin-top:12px;background:#555;color:#fff;font-size:11px;font-weight:700;padding:6px 16px;border-radius:3px;text-decoration:none;letter-spacing:.05em;margin-right:8px;}
+  .img-fallback{display:flex;align-items:center;justify-content:center;font-weight:900;color:rgba(255,255,255,0.55);font-size:13px;letter-spacing:.1em;text-align:center;padding:12px;text-shadow:0 1px 3px rgba(0,0,0,0.3);}
+  </style>
+</head>
+<body>
+
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>📰 創刊号 ── 田村新聞、本日より創刊！MMT inc.向けクリエイティブ業界日刊情報メディアがスタート</span>
+    <span>📺 放送制作会社売上8.7%減、でもデジタル映像は4.2兆円突破！映像の主戦場が完全移行</span>
+    <span>🌐 Threads 3.2億MAU・Bluesky 4,100万人へ急成長 ── X代替の主役が見えてきた</span>
+    <span>🤖 Sora 2（OpenAI）vs Veo 3.1（Google）── AI動画生成2強が2026年に確立</span>
+    <span>🎪 AnimeJapan 2026 まであと18日 ── 3月28〜29日 東京ビッグサイト</span>
+  </div>
+</div>
+
+<div class="masthead">
+  <div class="masthead-banner">
+    <div class="paper-title"><span class="t1">田村</span><span class="t2">新聞</span></div>
+    <div class="masthead-right">
+      <div class="soukan-badge">🎉 創 刊 号</div>
+      <div class="edition-badge">VOL.001 第1号</div>
+      <div class="date-jp">2026年3月10日（火）</div>
+      <div class="date-en">TUESDAY, MARCH 10, 2026</div>
+    </div>
+  </div>
+  <div class="masthead-line">
+    <span>MMT inc. DAILY CREATIVE INTELLIGENCE</span>
+    <span class="scope-badge">取材範囲 3/9 10:01〜3/10 09:00</span>
+  </div>
+</div>
+
+<div class="hero">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80" alt="映像制作"/>
+  <div class="hero-overlay">
+    <div class="hero-kicker">🎬 本日のトップ</div>
+    <div class="hero-headline">放送制作会社、売上8.7%減<br>でもデジタル映像は<br>4.2兆円突破！</div>
+    <div class="hero-sub">映像の"主戦場"が完全にデジタルへ移行。MMTが動くべき市場がここにある。</div>
+  </div>
+</div>
+
+<div class="breaking-bar">
+  <span class="breaking-label">🎉 創刊号外</span>
+  <span class="breaking-text">hololive SUPER EXPO 2026 幕張メッセで初の3日間開催 ── VTuber業界が過去最大規模に</span>
+</div>
+
+<!-- 01 映像クリエイティブ業界 -->
+<div class="sec-head"><span class="sec-icon">🎬</span><span class="sec-label">映像クリエイティブ業界</span><span class="sec-num">01</span></div>
+
+<div class="story">
+  <a class="story-link" href="https://mvsk.jp/column/190139" target="_blank" rel="noopener">
+  <img class="story-img" src="https://picsum.photos/seed/tamura-v1-01/800/450" alt="映像制作"/>
+  <div class="story-body">
+    <div class="story-kicker">INDUSTRY DATA</div>
+    <div class="story-headline">放送制作会社、売上8.7%減でもデジタル映像は4.2兆円突破！<span class="link-badge">記事を読む ↗</span></div>
+    <div class="story-text">2026年最新調査で、放送番組制作会社の合計売上高が前年度比<strong>8.7%減</strong>と縮小。一方でインターネット通信系コンテンツは<strong>前年比7.2%増・4兆2,868億円</strong>と過去最大規模に。映像の"主戦場"が完全にデジタルへ移行している。</div>
+    <div class="story-tags"><span class="story-tag">#デジタルシフト</span><span class="story-tag">#動画市場</span><span class="story-tag">#放送vs配信</span></div>
+    <div class="source-url">🔗 出典：ムビサク｜映像業界動向レポート</div>
+  </div>
+  </a>
+</div>
+
+<div class="half-grid">
+  <div class="half-card">
+    <img class="half-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="M&A"/>
+    <div class="half-body">
+      <div class="half-kicker">M&A加速</div>
+      <div class="half-headline">イベントプロモ×映像制作のM&A加速</div>
+      <div class="half-text">TOWが映像制作会社を連結子会社化。ワンストップ化が競争軸に。</div>
+    </div>
+  </div>
+  <div class="half-card">
+    <img class="half-img" src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&q=80" alt="差別化"/>
+    <div class="half-body">
+      <div class="half-kicker">MMT視点</div>
+      <div class="half-headline">「安売り」か「独自価値」かで生存が二極化</div>
+      <div class="half-text">リアル体験映像・鮮度・空気感に特化した制作会社が差別化に成功。</div>
+    </div>
+  </div>
+</div>
+
+<!-- 02 SNS動向 -->
+<div class="sec-head"><span class="sec-icon">📲</span><span class="sec-label">SNS動向・プラットフォーム考察</span><span class="sec-num">02</span></div>
+
+<div class="quote-box">
+  <div class="quote-label">2026年 SNS最大のキーワード</div>
+  <div class="quote-text">「アテンション・<br>デトックス」<br>が若者に刺さる</div>
+  <div class="quote-source">── 少人数・オフライン・クローズド。リアル体験×限定コミュニティへの需要が急増</div>
+</div>
+
+<div class="story">
+  <a class="story-link" href="https://www.comnico.jp/we-love-social/sns-news" target="_blank" rel="noopener">
+  <img class="story-img short" src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80" alt="SNS"/>
+  <div class="story-body">
+    <div class="story-kicker">PLATFORM UPDATE</div>
+    <div class="story-headline">Threads 3.2億MAU・Bluesky 4,100万人！X代替の主役が見えてきた<span class="link-badge">記事を読む ↗</span></div>
+    <div class="story-text">X(旧Twitter)代替として<strong>Threads</strong>が2025年1月に<strong>3.2億MAU</strong>突破。<strong>Bluesky</strong>も4,100万ユーザーに急成長。SNSは「フォロー」から「レコメンド」メディアへと全面移行。フォロワー数より<strong>「刺さる1本」</strong>が重要な時代に。</div>
+    <div class="story-tags"><span class="story-tag">#Threads</span><span class="story-tag">#Bluesky</span><span class="story-tag">#X代替</span></div>
+    <div class="source-url">🔗 出典：comnico｜2026年SNSプラットフォーム動向まとめ</div>
+  </div>
+  </a>
+</div>
+
+<div class="alert-yellow">
+  <div class="alert-yellow-label">📅 3月の投稿ネタ</div>
+  <div class="alert-yellow-text">新生活・卒業・入学で検索需要急増！4月1日エイプリルフール向けのティーザー投稿を今週から仕込め。</div>
+</div>
+
+<!-- 03 検索ワードランキング -->
+<div class="sec-head"><span class="sec-icon">🔍</span><span class="sec-label">検索ワード急上昇ランキング</span><span class="sec-num">03</span></div>
+
+<div class="ranking-wrap">
+  <div class="rank-title">📊 本日のトレンドワード TOP 8</div>
+  <div class="rank-item">
+    <div class="rank-num r1">1</div>
+    <div class="rank-content">
+      <div class="rank-word">BTS カムバック 2026</div>
+      <div class="rank-desc">3月完全体復帰確定でグローバル検索急増</div>
+    </div>
+    <div class="rank-arrow rank-up">🔥</div>
+  </div>
+  <div class="rank-item">
+    <div class="rank-num r2">2</div>
+    <div class="rank-content">
+      <div class="rank-word">hololive 7th fes</div>
+      <div class="rank-desc">3/6〜8幕張メッセ開催・余韻検索継続中</div>
+    </div>
+    <div class="rank-arrow rank-up">↑↑</div>
+  </div>
+  <div class="rank-item">
+    <div class="rank-num r3">3</div>
+    <div class="rank-content">
+      <div class="rank-word">Sora 2 / Veo 3.1</div>
+      <div class="rank-desc">AI動画生成ツール比較検索が急増</div>
+    </div>
+    <div class="rank-arrow rank-up">↑</div>
+  </div>
+  <div class="rank-item">
+    <div class="rank-num">4</div>
+    <div class="rank-content">
+      <div class="rank-word">アフタームービー 制作</div>
+      <div class="rank-desc">春イベントシーズン前に受発注検索増</div>
+    </div>
+    <div class="rank-arrow rank-up">↑</div>
+  </div>
+  <div class="rank-item">
+    <div class="rank-num">5</div>
+    <div class="rank-content">
+      <div class="rank-word">AnimeJapan 2026</div>
+      <div class="rank-desc">3/28〜29東京ビッグサイト開催直前</div>
+    </div>
+    <div class="rank-arrow rank-up">↑</div>
+  </div>
+  <div class="rank-item">
+    <div class="rank-num">6</div>
+    <div class="rank-content">
+      <div class="rank-word">ショート動画 戦略 2026</div>
+      <div class="rank-desc">企業SNS担当者の新年度準備検索</div>
+    </div>
+    <div class="rank-arrow rank-up">↑</div>
+  </div>
+  <div class="rank-item">
+    <div class="rank-num">7</div>
+    <div class="rank-content">
+      <div class="rank-word">VSPO SHOWDOWN 2026</div>
+      <div class="rank-desc">3/21〜22有明アリーナのVTuberイベント</div>
+    </div>
+    <div class="rank-arrow rank-up">↑</div>
+  </div>
+  <div class="rank-item">
+    <div class="rank-num">8</div>
+    <div class="rank-content">
+      <div class="rank-word">縦型動画 フック 3秒</div>
+      <div class="rank-desc">TikTok/Reels制作ノウハウ検索増</div>
+    </div>
+    <div class="rank-arrow rank-stay">→</div>
+  </div>
+</div>
+
+<!-- 04 投稿ムーブメント -->
+<div class="sec-head"><span class="sec-icon">🌊</span><span class="sec-label">投稿方法・コンテンツムーブメント</span><span class="sec-num">04</span></div>
+
+<div class="story">
+  <a class="story-link" href="https://www.dentsudigital.co.jp/knowledge-charge/articles/2025-1222-meta-tiktok" target="_blank" rel="noopener">
+  <img class="story-img short" src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=800&q=80" alt="縦型動画"/>
+  <div class="story-body">
+    <div class="story-kicker">MOVEMENT 2026</div>
+    <div class="story-headline">縦型動画は「最初の3秒」が命。BGM選定で180度印象が変わる<span class="link-badge">記事を読む ↗</span></div>
+    <div class="story-text">2026年ショート動画の鉄則は<strong>「3秒フック」</strong>。スクロールを止めるための冒頭設計が全て。BGM・SEはプラットフォームトレンド音源を活用することで拡散力が数倍に。Instagram Reelsが利用時間の<strong>50%</strong>を占有、YouTubeショートは<strong>1日700億回再生</strong>を記録。</div>
+    <div class="story-tags"><span class="story-tag">#3秒フック</span><span class="story-tag">#BGM戦略</span><span class="story-tag">#Reels</span></div>
+    <div class="source-url">🔗 出典：電通デジタル｜縦型動画最前線レポート</div>
+  </div>
+  </a>
+</div>
+
+<div class="alert-yellow">
+  <div class="alert-yellow-label">💡 2026年新常識</div>
+  <div class="alert-yellow-text">TikTokショートドラマが企業マーケティングに浸透。「戦略が9割」──バズ依存からの卒業が業界の新常識に。</div>
+</div>
+
+<!-- 05 VTuber -->
+<div class="sec-head"><span class="sec-icon">🎭</span><span class="sec-label">VTuber / Vsinger / Vmusician</span><span class="sec-num">05</span></div>
+
+<div class="story">
+  <a class="story-link" href="https://www.moguravr.com/hololive-super-expo-2026/" target="_blank" rel="noopener">
+  <img class="story-img" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80" alt="VTuber"/>
+  <div class="story-body">
+    <div class="story-kicker">BIG EVENT</div>
+    <div class="story-headline">hololive SUPER EXPO 2026、幕張メッセで初の3日間開催！<span class="link-badge">詳細 ↗</span></div>
+    <div class="story-text">ホロライブプロダクション最大のイベント<strong>「hololive SUPER EXPO 2026」</strong>と<strong>「hololive 7th fes. Ridin' on Dreams」</strong>が幕張メッセ国際展示場で3日間開催。テーマは"hololive time-warp"。直後の検索・SNS反応が続いており、関連映像のSNS拡散が活性化中。</div>
+    <div class="story-tags"><span class="story-tag">#hololive</span><span class="story-tag">#幕張メッセ</span><span class="story-tag">#VTuberライブ</span></div>
+    <div class="source-url">🔗 出典：MoguLive｜hololive SUPER EXPO 2026 特集</div>
+  </div>
+  </a>
+</div>
+
+<div class="half-grid">
+  <a class="half-link" href="https://www.moguravr.com/vspo-showdown-2026-ariake-arena/" target="_blank" rel="noopener">
+  <div class="half-card">
+    <img class="half-img" src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&q=80" alt="VSPO"/>
+    <div class="half-body">
+      <div class="half-kicker">🔜 あと11日 ↗</div>
+      <div class="half-headline">VSPO! SHOWDOWN 有明アリーナ 3/21〜22</div>
+      <div class="half-text">esports×VTuberの大型イベント。映像案件として今すぐ動くべし。</div>
+    </div>
+  </div>
+  </a>
+  <div class="half-card">
+    <img class="half-img" src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=400&q=80" alt="hololive EN"/>
+    <div class="half-body">
+      <div class="half-kicker">GLOBAL</div>
+      <div class="half-headline">hololive EN「Drawn to Dawn」ロサンゼルス開催</div>
+      <div class="half-text">VTuberライブの海外展開が加速。グローバル映像演出の需要が増大。</div>
+    </div>
+  </div>
+</div>
+
+<!-- 06 ライブ・イベント -->
+<div class="sec-head"><span class="sec-icon">🎪</span><span class="sec-label">ライブ・イベント業界動向</span><span class="sec-num">06</span></div>
+
+<div class="story">
+  <a class="story-link" href="https://anime-japan.jp/about/" target="_blank" rel="noopener">
+  <img class="story-img short" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" alt="AnimeJapan"/>
+  <div class="story-body">
+    <div class="story-kicker">COMING SOON</div>
+    <div class="story-headline">AnimeJapan 2026、3/28〜29 東京ビッグサイト開幕！<span class="link-badge">公式サイト ↗</span></div>
+    <div class="story-text">日本最大のアニメイベント<strong>AnimeJapan 2026</strong>が今月末に開幕。映像・メディア・コンテンツ各社が集結するこのタイミングは<strong>業界の受発注トレンドを把握する絶好の機会</strong>。参加者向けアフタームービー需要も高まるフェーズ。</div>
+    <div class="story-tags"><span class="story-tag">#AnimeJapan</span><span class="story-tag">#コンテンツ</span><span class="story-tag">#東京ビッグサイト</span></div>
+    <div class="source-url">🔗 出典：AnimeJapan 2026 公式</div>
+  </div>
+  </a>
+</div>
+
+<div class="quote-box">
+  <div class="quote-label">田村新聞 創刊の言葉</div>
+  <div class="quote-text">「熱冷めない<br>うちに届ける」<br>それが田村新聞</div>
+  <div class="quote-source">── MMTのコアコンセプトが、業界スタンダードとして認知されつつある</div>
+</div>
+
+<!-- 07 縦型動画 -->
+<div class="sec-head"><span class="sec-icon">📱</span><span class="sec-label">縦型動画・ショート動画トレンド</span><span class="sec-num">07</span></div>
+
+<div class="story">
+  <a class="story-link" href="https://dfplus.io/blog/vertical-short-video-ads-20250326" target="_blank" rel="noopener">
+  <div class="story-body">
+    <div class="story-kicker">MARKET DATA</div>
+    <div class="story-headline">動画広告市場1.2兆円へ！縦型動画が主要チャネルとして完全定着<span class="link-badge">記事を読む ↗</span></div>
+    <div class="story-text">2026年動画広告市場は約<strong>1兆2,000億円</strong>規模に。縦型動画（Shorts・Reels・TikTok）が広告枠の中心に。MMTのSNSディレクション事業は<strong>最も高成長の領域</strong>に位置している。企業の動画投稿は「TikTok優先」から「Reels+Shorts同時展開」へシフト中。</div>
+    <div class="story-tags"><span class="story-tag">#動画広告</span><span class="story-tag">#縦型動画</span><span class="story-tag">#成長市場</span></div>
+    <div class="source-url">🔗 出典：dfplus.io｜縦型ショート動画広告トレンド徹底解説</div>
+  </div>
+  </a>
+</div>
+
+<div class="alert-yellow">
+  <div class="alert-yellow-label">📊 2026年 数字で見るショート動画</div>
+  <div class="alert-yellow-text">YouTube Shorts：1日700億回再生 ／ Instagram Reels：利用時間の50%占有 ／ TikTok：平均視聴時間95分/日</div>
+</div>
+
+<!-- 08 AI×映像制作 -->
+<div class="sec-head"><span class="sec-icon">🤖</span><span class="sec-label">AI×映像制作ツール最新情報</span><span class="sec-num">08</span></div>
+
+<div class="story">
+  <a class="story-link" href="https://note.com/ainoarukurashi/n/n1b4db76d5792" target="_blank" rel="noopener">
+  <img class="story-img short" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80" alt="AI映像"/>
+  <div class="story-body">
+    <div class="story-kicker">AI 2強</div>
+    <div class="story-headline">Sora 2（OpenAI）vs Veo 3.1（Google）プロ向けAI動画生成が激化！<span class="link-badge">記事を読む ↗</span></div>
+    <div class="story-text">2026年AI動画生成の2強が確立。<strong>Sora 2</strong>は映像＋音声の統合生成・物理法則の高精度再現。<strong>Veo 3.1</strong>はAPI形式で自動化可能なプロ向けツール。いずれも<strong>クリエイティブのプロトタイプ・素材生成</strong>に活用可能な段階に。</div>
+    <div class="story-tags"><span class="story-tag">#Sora2</span><span class="story-tag">#Veo3</span><span class="story-tag">#AI動画生成</span></div>
+    <div class="source-url">🔗 出典：AIのある暮らし｜AI動画生成ツール最新比較</div>
+  </div>
+  </a>
+</div>
+
+<div class="tool-grid">
+  <div class="tool-card">
+    <div class="tool-new">2026最強</div>
+    <div class="tool-emoji">🎞</div>
+    <div class="tool-name">Sora 2</div>
+    <div class="tool-desc">映像+音声統合・物理法則高精度。プロトタイプ生成に最適</div>
+  </div>
+  <div class="tool-card">
+    <div class="tool-new">API対応</div>
+    <div class="tool-emoji">🔥</div>
+    <div class="tool-name">Veo 3.1</div>
+    <div class="tool-desc">Google製。自動化対応のプロ向けAPI型ツール</div>
+  </div>
+  <div class="tool-card">
+    <div class="tool-emoji">🎨</div>
+    <div class="tool-name">Midjourney Video</div>
+    <div class="tool-desc">静止画→短編動画変換。V1 Video Model公開済</div>
+  </div>
+  <div class="tool-card">
+    <div class="tool-emoji">⚡</div>
+    <div class="tool-name">Kling AI</div>
+    <div class="tool-desc">人物動作・カメラ移動が滑らか。現場感の再現に強い</div>
+  </div>
+</div>
+
+<!-- 09 海外トレンド -->
+<div class="sec-head"><span class="sec-icon">🌏</span><span class="sec-label">海外クリエイティブトレンド</span><span class="sec-num">09</span></div>
+
+<div class="story">
+  <a class="story-link" href="https://advertising.amazon.com/ja-jp/library/news/marketing-trends-2026" target="_blank" rel="noopener">
+  <img class="story-img short" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80" alt="K-POP"/>
+  <div class="story-body">
+    <div class="story-kicker">GLOBAL</div>
+    <div class="story-headline">BTS 2026年3月完全体カムバック確定！日本K-POPシーンが過去最大規模に<span class="link-badge">記事を読む ↗</span></div>
+    <div class="story-text"><strong>BTS</strong>の2026年3月完全体カムバックが正式確定し、グローバルファンダムの注目が最高潮。<strong>LE SSERAFIM・TXT</strong>のカムバックも同時期に予定。日本でのK-POPライブ・イベント開催が「過去最大規模」に拡大。AI翻訳機・デジタルフォトカード・カスタムペンライトなど演出テクノロジーも進化。</div>
+    <div class="story-tags"><span class="story-tag">#BTS</span><span class="story-tag">#KPOP</span><span class="story-tag">#ライブ演出</span></div>
+    <div class="source-url">🔗 出典：Amazon Ads｜2026年グローバルトレンド</div>
+  </div>
+  </a>
+</div>
+
+<!-- 10 競合動向 -->
+<div class="sec-head"><span class="sec-icon">🔭</span><span class="sec-label">競合・同業クリエイター動向</span><span class="sec-num">10</span></div>
+
+<div class="half-grid">
+  <div class="half-card">
+    <img class="half-img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80" alt="業界動向"/>
+    <div class="half-body">
+      <div class="half-kicker">INDUSTRY SHIFT</div>
+      <div class="half-headline">「企業バズ」時代の終焉。コミュニティ形成が次の主戦場</div>
+      <div class="half-text">「1投稿でバズる」戦略の費用対効果が低下。ファンコミュニティ育成が主流に。</div>
+    </div>
+  </div>
+  <div class="half-card">
+    <img class="half-img" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80" alt="春需要"/>
+    <div class="half-body">
+      <div class="half-kicker">SPRING RUSH</div>
+      <div class="half-headline">春シーズン前に同業の実績公開・SNS発信が急増</div>
+      <div class="half-text">今がMMTの実績・差別化ポイントを発信する最適タイミング。</div>
+    </div>
+  </div>
+</div>
+
+<!-- INSIGHT -->
+<div class="insight">
+  <div class="insight-head">
+    <span class="insight-head-icon">💡</span>
+    <span class="insight-head-title">MMT Inc. TODAY'S INSIGHT</span>
+    <span class="insight-head-sub">創刊号・本日動くべき4つのこと</span>
+  </div>
+  <div class="insight-body">
+    <div class="insight-item">
+      <div class="insight-num">01</div>
+      <div class="insight-content">
+        <div class="insight-ttl">今週が春需要の仕込みピーク</div>
+        <div class="insight-txt">4月新年度を控え、企業の映像・SNS発注検討が最も活発な時期。<strong>実績コンテンツの発信を今週中に。</strong></div>
+      </div>
+    </div>
+    <div class="insight-item">
+      <div class="insight-num">02</div>
+      <div class="insight-content">
+        <div class="insight-ttl">hololive EXPOの余韻が続く今がVTuber業界への提案好機</div>
+        <div class="insight-txt">リアルイベント映像の提案を具体的に動かすタイミング。<strong>VSPO! SHOWDOWNまであと11日。</strong></div>
+      </div>
+    </div>
+    <div class="insight-item">
+      <div class="insight-num">03</div>
+      <div class="insight-content">
+        <div class="insight-ttl">AI動画ツールはプリプロ活用で武器にできる</div>
+        <div class="insight-txt">Kling AIやSora 2を使ったコンテ・参考映像の生成で<strong>クライアント提案の質を上げるフェーズに入っている。</strong></div>
+      </div>
+    </div>
+    <div class="insight-item">
+      <div class="insight-num">04</div>
+      <div class="insight-content">
+        <div class="insight-ttl">「アテンション・デトックス」はMMTの強みと直結</div>
+        <div class="insight-txt">オフライン体験の映像化・少人数コミュニティ向けコンテンツへの需要は確実に増大している。<strong>B to F戦略が最先端。</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-title">田村<span>新聞</span></div>
+  <div class="footer-url">fabulous-griffin-ad04cf.netlify.app</div>
+  <div class="footer-div"></div>
+  <div class="footer-info">
+    Powered by Claude × MMT inc.<br>
+    リサーチ範囲：2026.03.09 10:01 〜 03.10 09:00<br>
+    🎉 創刊号 ／ VOL.001
+  </div>
+  <a class="back-btn" href="../archive.html">← バックナンバー一覧</a>
+  <a class="archive-btn" href="../index.html">最新号を読む →</a>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+var gs=["linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%)","linear-gradient(135deg,#2d1b69 0%,#11998e 100%)","linear-gradient(135deg,#0c0c0c 0%,#333 50%,#1a1a1a 100%)","linear-gradient(135deg,#cc0000 0%,#660000 100%)","linear-gradient(135deg,#003d5b 0%,#00838f 100%)","linear-gradient(135deg,#4a148c 0%,#7b1fa2 100%)"];
+var i=0;
+document.querySelectorAll("img").forEach(function(img){
+function fix(){
+var d=document.createElement("div");
+d.className=img.className+" img-fallback";
+d.style.background=gs[i%gs.length];
+var t=img.alt||"";
+if(t.length>20)t=t.substring(0,20)+"…";
+d.textContent=t;
+img.parentNode.replaceChild(d,img);
+i++;
+}
+img.addEventListener("error",fix);
+if(img.complete&&img.naturalWidth===0&&img.src)fix();
+});
+});
+</script>
+</body>
+</html>
