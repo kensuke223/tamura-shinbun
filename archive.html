@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>田村新聞 バックナンバー</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:#f0ebe0;color:#111;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-size:14px;line-height:1.6;max-width:480px;margin:0 auto;}
+
+    /* MASTHEAD */
+    .masthead-banner{background:#111;padding:14px 14px 12px;display:flex;align-items:flex-end;justify-content:space-between;}
+    .paper-title{font-size:44px;font-weight:900;letter-spacing:-.02em;line-height:1;}
+    .paper-title .t1{color:#fff;}
+    .paper-title .t2{color:#cc0000;}
+    .masthead-right{text-align:right;}
+    .page-badge{background:#cc0000;color:#fff;font-size:10px;font-weight:900;padding:2px 8px;border-radius:2px;display:inline-block;margin-bottom:5px;letter-spacing:.1em;}
+    .page-sub{font-size:10px;color:#aaa;margin-top:3px;}
+    .masthead-line{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:#f5f0e6;border-bottom:3px solid #cc0000;font-size:9px;color:#666;}
+    .back-btn{background:#111;color:#fff;font-size:9px;font-weight:700;padding:2px 8px;border-radius:2px;text-decoration:none;}
+
+    /* STATS BAR */
+    .stats-bar{background:#cc0000;color:#fff;padding:10px 14px;display:flex;justify-content:space-around;text-align:center;}
+    .stat-item{}
+    .stat-num{font-size:22px;font-weight:900;line-height:1;}
+    .stat-label{font-size:9px;letter-spacing:.05em;opacity:.85;}
+
+    /* SECTION HEADER */
+    .sec-head{background:#111;color:#fff;padding:8px 14px;font-size:12px;font-weight:900;letter-spacing:.1em;margin-top:10px;}
+
+    /* ISSUE CARD */
+    .issue-card{background:#fff;margin:2px 0;text-decoration:none;color:inherit;display:block;border-bottom:2px solid #f0ebe0;}
+    .issue-card:hover{background:#fff8f8;}
+    .issue-inner{display:flex;align-items:stretch;gap:0;}
+    .issue-date-col{background:#111;color:#fff;padding:14px 12px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:64px;text-align:center;}
+    .issue-month{font-size:10px;font-weight:700;color:#aaa;letter-spacing:.05em;}
+    .issue-day{font-size:28px;font-weight:900;line-height:1;color:#fff;}
+    .issue-dow{font-size:9px;color:#aaa;margin-top:2px;}
+    .issue-vol{background:#cc0000;color:#fff;font-size:8px;font-weight:900;padding:1px 5px;border-radius:2px;margin-top:5px;letter-spacing:.05em;}
+    .issue-body{flex:1;padding:12px 14px;}
+    .issue-kicker{font-size:9px;font-weight:900;color:#cc0000;letter-spacing:.1em;margin-bottom:4px;}
+    .issue-headline{font-size:15px;font-weight:900;line-height:1.3;margin-bottom:6px;}
+    .issue-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;}
+    .issue-tag{background:#f0ebe0;border:1px solid #ccc;border-radius:20px;padding:1px 7px;font-size:9px;color:#666;}
+    .issue-arrow{display:flex;align-items:center;padding:0 12px;font-size:20px;color:#cc0000;font-weight:900;}
+
+    /* LATEST BADGE */
+    .latest-badge{display:inline-block;background:#ffdd00;border:2px solid #cc0000;color:#cc0000;font-size:9px;font-weight:900;padding:1px 6px;border-radius:2px;margin-left:6px;vertical-align:middle;letter-spacing:.05em;}
+
+    /* NEW ISSUE BTN */
+    .new-issue-btn{display:block;background:#cc0000;color:#fff;text-align:center;padding:14px;font-size:15px;font-weight:900;text-decoration:none;margin:10px 0 2px;letter-spacing:.08em;}
+    .new-issue-btn:hover{opacity:.85;}
+
+    /* EMPTY STATE */
+    .empty-state{background:#fff;margin:2px 0;padding:30px 14px;text-align:center;color:#999;}
+    .empty-state p{font-size:13px;margin-top:8px;}
+
+    /* FOOTER */
+    footer{background:#111;color:#fff;padding:18px 14px;margin-top:10px;text-align:center;}
+    .footer-title{font-size:16px;font-weight:900;margin-bottom:4px;}
+    .footer-title span{color:#cc0000;}
+    .footer-info{font-size:10px;color:#888;line-height:1.7;margin-top:6px;}
+    .footer-url{font-size:11px;color:#cc0000;}
+  </style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead-banner">
+  <div class="paper-title"><span class="t1">田村</span><span class="t2">新聞</span></div>
+  <div class="masthead-right">
+    <div class="page-badge">📚 バックナンバー</div>
+    <div class="page-sub">BACK NUMBER ARCHIVE</div>
+  </div>
+</div>
+<div class="masthead-line">
+  <span>MMT inc. DAILY CREATIVE INTELLIGENCE</span>
+  <a class="back-btn" href="index.html">← 最新号へ</a>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num">61</div>
+    <div class="stat-label">総発行号数</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">353</div>
+    <div class="stat-label">総カテゴリ記事数</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">2026</div>
+    <div class="stat-label">創刊年</div>
+  </div>
+</div>
+
+<!-- LATEST -->
+<a class="new-issue-btn" href="index.html">📰 最新号を読む →</a>
+
+<!-- 2026年5月 -->
+<div class="sec-head">📅 2026年5月</div>
+
+<!-- VOL.061 -->
+<a class="issue-card" href="archives/2026-05-08.html">
+  <div class="issue-inner">
+    <div class="issue-date">
+      <div class="issue-month">5月</div>
+      <div class="issue-day">8</div>
+      <div class="issue-dow">金曜</div>
+      <div class="issue-vol">VOL.061</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">魔法科高校 劇場版 本日公開　KCON JAPAN 2026 開幕　holo Indie 5月期スタート　GPT-5.5 Instant登場<span class="latest-badge">最新号</span></div>
+      <div class="issue-tags">
+        <span class="issue-tag">#魔法科高校</span>
+        <span class="issue-tag">#KCON2026</span>
+        <span class="issue-tag">#holoIndie</span>
+        <span class="issue-tag">#GPT55</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+<!-- VOL.060 -->
+<a class="issue-card" href="archives/2026-05-07.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAY</div>
+      <div class="issue-day">7</div>
+      <div class="issue-dow">木曜</div>
+      <div class="issue-vol">VOL.060</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">グランド・イリュージョン3明日公開　魔法科高校劇場版明日公開　嵐東京ドーム5/31配信　Google I/O 2026まで12日</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#グランドイリュージョン3</span>
+        <span class="issue-tag">#魔法科高校劇場版</span>
+        <span class="issue-tag">#嵐WeAreARASHI</span>
+        <span class="issue-tag">#GoogleIO2026</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.059 -->
+<a class="issue-card" href="archives/2026-05-06.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAY</div>
+      <div class="issue-day">6</div>
+      <div class="issue-dow">水曜</div>
+      <div class="issue-vol">VOL.059</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">SAKAMOTO DAYS映画ランキング1位　ビバラロック最終日AKFG　嵐5/31東京ドーム生配信　OpenAIスマホ詳報</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#SAKAMOTODAYS</span>
+        <span class="issue-tag">#ビバラロック2026</span>
+        <span class="issue-tag">#嵐WeAreARASHI</span>
+        <span class="issue-tag">#OpenAIスマホ</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.058 -->
+<a class="issue-card" href="archives/2026-05-05.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAY</div>
+      <div class="issue-day">5</div>
+      <div class="issue-dow">火曜</div>
+      <div class="issue-vol">VOL.058</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン公開23日93.1億円突破　JAPAN JAM最終日[Alexandros]・ももクロ　にじポーズぬい18時発売　OpenAIスマホ2027量産</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナンハイウェイ興収</span>
+        <span class="issue-tag">#JAPANJAM2026</span>
+        <span class="issue-tag">#にじポーズぬい</span>
+        <span class="issue-tag">#OpenAIスマホ</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.057 -->
+<a class="issue-card" href="archives/2026-05-04.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAY</div>
+      <div class="issue-day">4</div>
+      <div class="issue-dow">月曜</div>
+      <div class="issue-vol">VOL.057</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">ジブリパーク「魔女の谷の夜」7/8上映　SUMMER SONIC 2026正式ラインナップ　にじさんじフェス2026　日本AI基盤モデル開発新会社</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#ジブリパーク新短編</span>
+        <span class="issue-tag">#サマソニ2026</span>
+        <span class="issue-tag">#にじさんじフェス</span>
+        <span class="issue-tag">#日本AI基盤モデル</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.056 -->
+<a class="issue-card" href="archives/2026-05-03.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAY</div>
+      <div class="issue-day">3</div>
+      <div class="issue-dow">日曜</div>
+      <div class="issue-vol">VOL.056</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">Netflix「三体 S2」全話配信開始　Official髭男dism新AL「Atlas」発表　hololive EXPO 2026発表　Google Veo 3動画生成AI</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#三体S2配信</span>
+        <span class="issue-tag">#髭男Atlas</span>
+        <span class="issue-tag">#hololiveEXPO</span>
+        <span class="issue-tag">#Veo3</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.055 -->
+<a class="issue-card" href="archives/2026-05-02.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAY</div>
+      <div class="issue-day">2</div>
+      <div class="issue-dow">土曜</div>
+      <div class="issue-vol">VOL.055</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">カンヌ2026コンペ是枝・濱口同時選出　Mrs.GREEN APPLE「魔女」MV公開　VSPO! VALORANT大会　Grok 3.5発表</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#カンヌ2026</span>
+        <span class="issue-tag">#ミセス魔女MV</span>
+        <span class="issue-tag">#VSPO応援配信</span>
+        <span class="issue-tag">#Grok3.5</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.054 -->
+<a class="issue-card" href="archives/2026-05-01.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAY</div>
+      <div class="issue-day">1</div>
+      <div class="issue-dow">金曜</div>
+      <div class="issue-vol">VOL.054</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">アベンジャーズ：ドゥームズデイ本日公開　Ado東京ドーム追加　星街すいせいアルバム発表　Claude 4発表</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#ドゥームズデイ公開</span>
+        <span class="issue-tag">#Ado東京ドーム</span>
+        <span class="issue-tag">#星街すいせいALBUM</span>
+        <span class="issue-tag">#Claude4</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.053 -->
+<a class="issue-card" href="archives/2026-04-30.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">30</div>
+      <div class="issue-dow">木曜</div>
+      <div class="issue-vol">VOL.053</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン100億円突破カウントダウン　ROF-MAO FLIPPER本日配信開始　にじさんじフェス2026一般発売5/10決定　Gemini 2.5 Pro GA</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナン100億円目前</span>
+        <span class="issue-tag">#ROFLMAO本日配信</span>
+        <span class="issue-tag">#にじフェス一般発売</span>
+        <span class="issue-tag">#Gemini2.5ProGA</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.052 -->
+<a class="issue-card" href="archives/2026-04-29.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">29</div>
+      <div class="issue-dow">水曜</div>
+      <div class="issue-vol">VOL.052</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン79.8億円・GW後半で100億円突破確実　3SKM Nighthawks本日CD発売　RK Music Fes.2026開催決定　GPT-5.5発表</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナン100億円目前</span>
+        <span class="issue-tag">#3SKM本日発売</span>
+        <span class="issue-tag">#RKMusicFes2026</span>
+        <span class="issue-tag">#GPT-5.5</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.051 -->
+<a class="issue-card" href="archives/2026-04-28.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">28</div>
+      <div class="issue-dow">火曜</div>
+      <div class="issue-vol">VOL.051</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナンGW後半前夜・最終200億円も視野　3SKM Nighthawks明日CD発売　Run BTS!2.0第2話4/30　Anthropic Mythos「強すぎて公開できない」</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナン200億視野</span>
+        <span class="issue-tag">#3SKM明日発売</span>
+        <span class="issue-tag">#RunBTS第2話</span>
+        <span class="issue-tag">#Anthropic Mythos</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.050 -->
+<a class="issue-card" href="archives/2026-04-27.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">27</div>
+      <div class="issue-dow">月曜</div>
+      <div class="issue-vol">VOL.050</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン100億円突破V3達成・最速記録更新　Run BTS! 2.0第2話明日公開　ROF-MAO「FLIPPER」4/30配信　OSS AIがフロンティア席巻</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナン100億円</span>
+        <span class="issue-tag">#RunBTS第2話</span>
+        <span class="issue-tag">#FLIPPER秦基博</span>
+        <span class="issue-tag">#オープンソースAI</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.049 -->
+<a class="issue-card" href="archives/2026-04-26.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">26</div>
+      <div class="issue-dow">日曜</div>
+      <div class="issue-vol">VOL.049</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン100億円目前・V3目指すGW週末2日目　GoogleがAnthropicへ400億ドル投資　3SKM Nighthawks CD3日前　Y4T4初週末</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナン100億目前</span>
+        <span class="issue-tag">#Google Anthropic</span>
+        <span class="issue-tag">#3SKM CD</span>
+        <span class="issue-tag">#Y4T4週末</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.048 -->
+<a class="issue-card" href="archives/2026-04-25.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">25</div>
+      <div class="issue-dow">土曜</div>
+      <div class="issue-vol">VOL.048</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナンGW週末突入V3目指す累計75億円　DeepSeek V4-Pro発表OSS最強　ローレンMini Album好発進　にじフェス2026情報解禁</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナンGW週末</span>
+        <span class="issue-tag">#DeepSeek V4</span>
+        <span class="issue-tag">#ローレン No One</span>
+        <span class="issue-tag">#にじフェス2026</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.047 -->
+<a class="issue-card" href="archives/2026-04-24.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">24</div>
+      <div class="issue-dow">金曜</div>
+      <div class="issue-vol">VOL.047</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナンGW本番突入・100億円カウントダウン　Run BTS! 2.0第1話24時間で反響爆発　ローレングッズ本日18時　ソフトバンクAIスマホ本日発売</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナンGW突入</span>
+        <span class="issue-tag">#RunBTS反響</span>
+        <span class="issue-tag">#ローレングッズ</span>
+        <span class="issue-tag">#NaturalAIPhone</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.046 -->
+<a class="issue-card" href="archives/2026-04-23.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">23</div>
+      <div class="issue-dow">木曜</div>
+      <div class="issue-vol">VOL.046</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナンGW前日・累計70億円ペース　Run BTS! 2.0本日21:00公開　甲斐田晴グッズ本日18時販売　LINEヤフー「Agent i」始動</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナンGW前日</span>
+        <span class="issue-tag">#RunBTS2.0</span>
+        <span class="issue-tag">#甲斐田晴グッズ</span>
+        <span class="issue-tag">#Agent i</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.045 -->
+<a class="issue-card" href="archives/2026-04-22.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">22</div>
+      <div class="issue-dow">水曜</div>
+      <div class="issue-vol">VOL.045</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン第2週V2達成・動員114万人・累計63億円超　BTS「SWIM」Billboard首位継続　Y4T4 Welcome Goods本日23:05販売　Stanford AI Index 2026発表</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナンV2達成</span>
+        <span class="issue-tag">#BTS SWIM首位</span>
+        <span class="issue-tag">#Y4T4 Welcome</span>
+        <span class="issue-tag">#Stanford AI Index</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.044 -->
+<a class="issue-card" href="archives/2026-04-21.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">21</div>
+      <div class="issue-dow">火曜</div>
+      <div class="issue-vol">VOL.044</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン10日63億円突破422万人動員　Y4T4本日初配信　BTS見逃し配信5/2決定　Anthropic IPO10月計画・評価額8,000億ドル</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナン63億円</span>
+        <span class="issue-tag">#Y4T4初配信</span>
+        <span class="issue-tag">#BTS見逃し配信</span>
+        <span class="issue-tag">#AnthropicIPO</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.043 -->
+<a class="issue-card" href="archives/2026-04-20.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">20</div>
+      <div class="issue-dow">月曜</div>
+      <div class="issue-vol">VOL.043</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">3SKM Nighthawks本日配信スタート　コナン90億円ペースGW特需開幕　BTS Weverse配信公開　GPT-6「Spud」5月リリース確定的</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#3SKMNighthawks配信</span>
+        <span class="issue-tag">#コナンGW突入</span>
+        <span class="issue-tag">#BTS見逃し配信</span>
+        <span class="issue-tag">#GPT6Spud</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.042 -->
+<a class="issue-card" href="archives/2026-04-19.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">19</div>
+      <div class="issue-dow">日曜</div>
+      <div class="issue-vol">VOL.042</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">BTS東京ドーム2days完走・約11万人動員　コナン第2週末85億円ペース　3SKM Nighthawks明日配信　Anthropic ARR30億ドル超え</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#BTS完走11万人</span>
+        <span class="issue-tag">#コナン85億円</span>
+        <span class="issue-tag">#3SKMNighthawks</span>
+        <span class="issue-tag">#AnthropicARR30B</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.041 -->
+<a class="issue-card" href="archives/2026-04-18.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">18</div>
+      <div class="issue-dow">土曜</div>
+      <div class="issue-vol">VOL.041</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">BTS東京ドーム2日目本日15:00開演・For You披露　コナン2週目土曜大入り80億円超　カードサプライvol.4明後日発売　中国AI盗用対抗共同戦線</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#BTS2日目</span>
+        <span class="issue-tag">#コナン80億円</span>
+        <span class="issue-tag">#カードサプライvol4</span>
+        <span class="issue-tag">#AI共同戦線</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.040 -->
+<a class="issue-card" href="archives/2026-04-17.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">17</div>
+      <div class="issue-dow">金曜</div>
+      <div class="issue-vol">VOL.040</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">BTS東京ドーム本日開幕・7年ぶり来日スタート　コナン第2週末快走　ぬいストア1周年本日発売　Claude Opus 4.7登場</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#BTS東京ドーム開幕</span>
+        <span class="issue-tag">#コナン2週目</span>
+        <span class="issue-tag">#ぬいストア1周年</span>
+        <span class="issue-tag">#ClaudeOpus47</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.039 -->
+<a class="issue-card" href="archives/2026-04-16.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">16</div>
+      <div class="issue-dow">木曜</div>
+      <div class="issue-vol">VOL.039</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">BTS東京ドーム前日・メンバー東京入り　コナン1週間65億円ペース　にじたうん5ちょうめ発売　Anthropic次の一手</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#BTS東京入り</span>
+        <span class="issue-tag">#コナン65億円</span>
+        <span class="issue-tag">#にじたうん</span>
+        <span class="issue-tag">#AnthropicOpus47</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.038 -->
+<a class="issue-card" href="archives/2026-04-15.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">15</div>
+      <div class="issue-dow">水曜</div>
+      <div class="issue-vol">VOL.038</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナンGW舞台挨拶決定・150億円射程　BTS東京ドームまで2日　共通衣装3Dグッズvol.4　GPT-5.4-Cyber発表</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナンGW舞台挨拶</span>
+        <span class="issue-tag">#BTSまで2日</span>
+        <span class="issue-tag">#にじさんじ共通衣装</span>
+        <span class="issue-tag">#GPT54Cyber</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.037 -->
+<a class="issue-card" href="archives/2026-04-14.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">14</div>
+      <div class="issue-dow">火曜</div>
+      <div class="issue-vol">VOL.037</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン3日間35億円・231万人・歴代No.1スタート　BTS東京ドームまで3日　ぬいストア1周年　Claude Mythos全貌</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナン35億円</span>
+        <span class="issue-tag">#BTS東京ドーム</span>
+        <span class="issue-tag">#にじさんじぬいストア</span>
+        <span class="issue-tag">#ClaudeMythos</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.036 -->
+<a class="issue-card" href="archives/2026-04-13.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">13</div>
+      <div class="issue-dow">月曜</div>
+      <div class="issue-vol">VOL.036</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン初日だけで第1作超え・嵐櫻井翔新番組MC・にじネイルSugar発売・Meta Muse Spark登場</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナン初日第1作超え</span>
+        <span class="issue-tag">#嵐櫻井翔新番組</span>
+        <span class="issue-tag">#にじネイルSugar</span>
+        <span class="issue-tag">#MetaMuseSpark</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.035 -->
+<a class="issue-card" href="archives/2026-04-12.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">12</div>
+      <div class="issue-dow">日曜</div>
+      <div class="issue-vol">VOL.035</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">BTS高陽最終日・コナン週末30億円突破・にじさんじ春の運試し最終日・Anthropic$30B達成</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#BTS高陽最終日</span>
+        <span class="issue-tag">#コナン週末爆走</span>
+        <span class="issue-tag">#にじさんじ春</span>
+        <span class="issue-tag">#Anthropic$30B</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.034 -->
+<a class="issue-card" href="archives/2026-04-11.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">11</div>
+      <div class="issue-dow">土曜</div>
+      <div class="issue-vol">VOL.034</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン初日11.3億円快挙・BTS高陽2日目・アンジュ100万人突破・OpenAI$100プラン</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナン初日快挙</span>
+        <span class="issue-tag">#BTS高陽2日目</span>
+        <span class="issue-tag">#アンジュ100万人</span>
+        <span class="issue-tag">#ChatGPTPro</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.033 -->
+<a class="issue-card" href="archives/2026-04-10.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">10</div>
+      <div class="issue-dow">金曜</div>
+      <div class="issue-vol">VOL.033</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン本日公開！嵐最終公演生配信決定・にじさんじ秘密ボイス発売・Claude Mythos限定公開</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナン本日公開</span>
+        <span class="issue-tag">#嵐最終生配信</span>
+        <span class="issue-tag">#にじさんじボイス</span>
+        <span class="issue-tag">#ClaudeMythos</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.032 -->
+<a class="issue-card" href="archives/2026-04-09.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">9</div>
+      <div class="issue-dow">木曜</div>
+      <div class="issue-vol">VOL.032</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">コナン明日公開！梶裕貴FRACTAL設立・にじいろクローゼット発売・Google Gemma 4登場</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナン明日公開</span>
+        <span class="issue-tag">#梶裕貴FRACTAL</span>
+        <span class="issue-tag">#にじいろクローゼット</span>
+        <span class="issue-tag">#GoogleGemma4</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.031 -->
+<a class="issue-card" href="archives/2026-04-08.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">8</div>
+      <div class="issue-dow">水曜</div>
+      <div class="issue-vol">VOL.031</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">BTS「SWIM」オリコン歴代記録更新！コナン明後日526館最大規模公開・嵐名古屋最終日・Google Vids AI動画無料</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#BTS_SWIM</span>
+        <span class="issue-tag">#コナン公開直前</span>
+        <span class="issue-tag">#嵐名古屋完走</span>
+        <span class="issue-tag">#GoogleVids</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.030 -->
+<a class="issue-card" href="archives/2026-04-07.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">7</div>
+      <div class="issue-dow">火曜</div>
+      <div class="issue-vol">VOL.030</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">にじさんじ渋谷西武POPUP本日オープン！コナン明後日公開・嵐名古屋2日目</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#にじさんじPOPUP</span>
+        <span class="issue-tag">#コナン公開直前</span>
+        <span class="issue-tag">#嵐名古屋</span>
+        <span class="issue-tag">#MicrosoftCopilot</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.029 -->
+<a class="issue-card" href="archives/2026-04-06.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">6</div>
+      <div class="issue-dow">月曜</div>
+      <div class="issue-vol">VOL.029</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">嵐名古屋バンテリン初日開幕！コナン今週金曜公開・にじさんじ渋谷POPUP明日・OpenAI評価額8520億ドル</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#嵐名古屋</span>
+        <span class="issue-tag">#コナン今週公開</span>
+        <span class="issue-tag">#にじさんじPOPUP</span>
+        <span class="issue-tag">#OpenAI</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.028 -->
+<a class="issue-card" href="archives/2026-04-05.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">5</div>
+      <div class="issue-dow">日曜</div>
+      <div class="issue-vol">VOL.028</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">にじさんじ×イオンモール春の運試し本日スタート！コナン今週公開・嵐名古屋明日開幕</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#にじさんじ春の運試し</span>
+        <span class="issue-tag">#コナン今週公開</span>
+        <span class="issue-tag">#嵐名古屋</span>
+        <span class="issue-tag">#Claude統合</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.027 -->
+<a class="issue-card" href="archives/2026-04-04.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">4</div>
+      <div class="issue-dow">土曜</div>
+      <div class="issue-vol">VOL.027</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">コナン公開1週間前・SPファンミーティング本日16時生配信！Slack×Claude AI 30機能・にじさんじ明日イオンモール</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#コナンSPファンミ</span>
+        <span class="issue-tag">#SlackClaudeAI</span>
+        <span class="issue-tag">#にじさんじ運試し</span>
+        <span class="issue-tag">#嵐名古屋</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.026 -->
+<a class="issue-card" href="archives/2026-04-03.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">3</div>
+      <div class="issue-dow">金曜</div>
+      <div class="issue-vol">VOL.026</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">コナン来週公開・Microsoft1.6兆円AI投資・ふぉ～ゆ～初武道館・学園ゔぉるたくしょんグッズ本日発売</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#名探偵コナン</span>
+        <span class="issue-tag">#Microsoft投資</span>
+        <span class="issue-tag">#ふぉ～ゆ～武道館</span>
+        <span class="issue-tag">#学園ゔぉるたくしょん</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.025 -->
+<a class="issue-card" href="archives/2026-04-02.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">2</div>
+      <div class="issue-dow">木曜</div>
+      <div class="issue-vol">VOL.025</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">Netflix「九条の大罪」本日配信開始！OpenAI Sora突然終了＆Disney契約白紙・嵐東京ドーム完走</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#九条の大罪</span>
+        <span class="issue-tag">#OpenAISora終了</span>
+        <span class="issue-tag">#嵐WeAreARASHI</span>
+        <span class="issue-tag">#SUSHIDOLPROJECT</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.024 -->
+<a class="issue-card" href="archives/2026-04-01.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">APR</div>
+      <div class="issue-day">1</div>
+      <div class="issue-dow">水曜</div>
+      <div class="issue-vol">VOL.024</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">嵐東京ドーム2日目・エイプリルフール2026 AI生成フェイク氾濫・VΔLZ 6周年・Netflix九条の大罪明日配信</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#嵐WeAreARASHI</span>
+        <span class="issue-tag">#エイプリルフール2026</span>
+        <span class="issue-tag">#VΔLZ6周年</span>
+        <span class="issue-tag">#九条の大罪</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- 2026年3月 -->
+<div class="sec-head">📅 2026年3月</div>
+
+<!-- VOL.023 -->
+<a class="issue-card" href="archives/2026-03-31.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">31</div>
+      <div class="issue-dow">火曜</div>
+      <div class="issue-vol">VOL.023</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">嵐「We Are ARASHI」東京ドーム本日開幕！Netflix九条の大罪明日配信──Q1最終日の最大エンタメニュース</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#嵐WeAreARASHI</span>
+        <span class="issue-tag">#九条の大罪</span>
+        <span class="issue-tag">#Q1総括</span>
+        <span class="issue-tag">#DoubleVision100万再生</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.022 -->
+<a class="issue-card" href="archives/2026-03-30.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">30</div>
+      <div class="issue-dow">月曜</div>
+      <div class="issue-vol">VOL.022</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">嵐「We Are ARASHI」明日東京ドーム開幕──AnimeJapan閉幕・Netflix九条の大罪4/2配信まで2日</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#嵐WeAreARASHI</span>
+        <span class="issue-tag">#AnimeJapan2026閉幕</span>
+        <span class="issue-tag">#九条の大罪</span>
+        <span class="issue-tag">#にじさんじNEWLIFE</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.021 -->
+<a class="issue-card" href="archives/2026-03-29.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">29</div>
+      <div class="issue-dow">日曜</div>
+      <div class="issue-vol">VOL.021</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">AnimeJapan 2026 最終日・Solo Leveling: Karma電撃公開──花畑チャイカ新3D＆NIJISANJI EN Double Vision本日20時</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#AnimeJapan2026</span>
+        <span class="issue-tag">#SoloLevelingKarma</span>
+        <span class="issue-tag">#花畑チャイカ新3D</span>
+        <span class="issue-tag">#DoubleVision</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.020 -->
+<a class="issue-card" href="archives/2026-03-28.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">28</div>
+      <div class="issue-dow">土曜</div>
+      <div class="issue-vol">VOL.020</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">AnimeJapan 2026 本日開幕！──Gemini 3 Flash Live発表・羊文学MoNフェス・花畑チャイカ明日新3D予告</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#AnimeJapan2026</span>
+        <span class="issue-tag">#Gemini3FlashLive</span>
+        <span class="issue-tag">#羊文学MoN</span>
+        <span class="issue-tag">#花畑チャイカ</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.019 -->
+<a class="issue-card" href="archives/2026-03-27.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">27</div>
+      <div class="issue-dow">金曜</div>
+      <div class="issue-vol">VOL.019</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">AnimeJapan 2026 明日開幕──Gemini 2.5 Pro 無料展開・九条の大罪カウントダウン</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#AnimeJapan2026</span>
+        <span class="issue-tag">#Gemini2.5Pro</span>
+        <span class="issue-tag">#九条の大罪</span>
+        <span class="issue-tag">#hololiveDreams</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.018 -->
+<a class="issue-card" href="archives/2026-03-26.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">26</div>
+      <div class="issue-dow">木曜</div>
+      <div class="issue-vol">VOL.018</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">AnimeJapan 2026 今週末開幕──Gemini 2.5 Pro 実験版公開・花畑チャイカ新3D衣装発表</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#AnimeJapan2026</span>
+        <span class="issue-tag">#Gemini2.5Pro</span>
+        <span class="issue-tag">#嵐WeareARASHI</span>
+        <span class="issue-tag">#花畑チャイカ</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.017 -->
+<a class="issue-card" href="archives/2026-03-25.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">25</div>
+      <div class="issue-dow">水曜</div>
+      <div class="issue-vol">VOL.017</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">羊文学「Dogs」3/25配信──Netflix「九条の大罪」主題歌、4/2世界配信へ</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#羊文学Dogs</span>
+        <span class="issue-tag">#九条の大罪</span>
+        <span class="issue-tag">#YouTube楽天</span>
+        <span class="issue-tag">#hololiveDreams</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.016 -->
+<a class="issue-card" href="archives/2026-03-24.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">24</div>
+      <div class="issue-dow">火曜</div>
+      <div class="issue-vol">VOL.016</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">トップ記事</div>
+      <div class="issue-headline">星街すいせい個人事務所「Studio STELLAR」設立──VTuberアーティスト活動が新フェーズへ</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#StudioSTELLAR</span>
+        <span class="issue-tag">#嵐WeareARASHI</span>
+        <span class="issue-tag">#TikTokShopLocal</span>
+        <span class="issue-tag">#ぶいかる</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.015 -->
+<a class="issue-card" href="archives/2026-03-23.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">23</div>
+      <div class="issue-dow">月曜</div>
+      <div class="issue-vol">VOL.015</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">YouTubeショッピング×楽天、日本上陸──動画コマース新時代</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#YouTubeショッピング</span>
+        <span class="issue-tag">#CA_AI動画完全自動生成</span>
+        <span class="issue-tag">#InstagramTV</span>
+        <span class="issue-tag">#Veo3.1</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.014 -->
+<a class="issue-card" href="archives/2026-03-22.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">22</div>
+      <div class="issue-dow">日曜</div>
+      <div class="issue-vol">VOL.014</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">日テレHD、映像制作大手KANAMELを392億円で完全子会社化──AOI Pro.・TYO傘下入り</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#KANAMEL子会社化</span>
+        <span class="issue-tag">#TikTokShopLocal</span>
+        <span class="issue-tag">#Kling3.0</span>
+        <span class="issue-tag">#ドリカムツアー</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.013 -->
+<a class="issue-card" href="archives/2026-03-21.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">21</div>
+      <div class="issue-dow">土曜</div>
+      <div class="issue-vol">VOL.013</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">Runway Gen-4.5が470億円調達＆AI動画ベンチマーク世界首位──映像制作AI覇権争い新局面へ</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#RunwayGen4.5</span>
+        <span class="issue-tag">#TikTokShop5万店</span>
+        <span class="issue-tag">#Kling3.0</span>
+        <span class="issue-tag">#ドリカムツアー</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.012 -->
+<a class="issue-card" href="archives/2026-03-20.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">20</div>
+      <div class="issue-dow">金・祝</div>
+      <div class="issue-vol">VOL.012</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">BTS完全体カムバック！5thアルバム『ARIRANG』世界同時発売──全14曲、明日Netflixライブ</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#BTS_ARIRANG</span>
+        <span class="issue-tag">#KANAMEL子会社化</span>
+        <span class="issue-tag">#ツタロックフェス</span>
+        <span class="issue-tag">#ぶいかる</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.011 -->
+<a class="issue-card" href="archives/2026-03-19.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">19</div>
+      <div class="issue-dow">木曜</div>
+      <div class="issue-vol">VOL.011</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">YouTube×楽天「ショッピングアフィリエイト」遂に日本上陸──動画コマースの新時代が始まる</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#YouTubeショッピング</span>
+        <span class="issue-tag">#Seedance2</span>
+        <span class="issue-tag">#CENTRAL2026</span>
+        <span class="issue-tag">#ばちゃすて</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.010 -->
+<a class="issue-card" href="archives/2026-03-18.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">18</div>
+      <div class="issue-dow">水曜</div>
+      <div class="issue-vol">VOL.010</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">ByteDance「Seedance 2.0」グローバル展開を緊急延期──ハリウッド著作権訴訟が映像AI市場に激震</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#Seedance2</span>
+        <span class="issue-tag">#YouTubeショッピング</span>
+        <span class="issue-tag">#ドリカム新アルバム</span>
+        <span class="issue-tag">#VTUBEREXPO</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.009 (archived) -->
+
+
+<!-- VOL.008 -->
+<a class="issue-card" href="archives/2026-03-17.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">17</div>
+      <div class="issue-dow">火曜</div>
+      <div class="issue-vol">VOL.008</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">TikTok Shop Local始動──地域特産品をコンテンツで全国発信、3月から第1弾展開</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#TikTokShopLocal</span>
+        <span class="issue-tag">#ツタロックフェス</span>
+        <span class="issue-tag">#Seedance2著作権</span>
+        <span class="issue-tag">#縦型動画900億円</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.007 -->
+<a class="issue-card" href="archives/2026-03-16.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">16</div>
+      <div class="issue-dow">月曜</div>
+      <div class="issue-vol">VOL.007</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">ByteDance「Seedance 2.0」海外展開一時停止──ハリウッド著作権問題でグローバルAPI凍結</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#Seedance2</span>
+        <span class="issue-tag">#YouTubeショッピング</span>
+        <span class="issue-tag">#VSPO有明</span>
+        <span class="issue-tag">#Veo3.1</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.006 -->
+<a class="issue-card" href="archives/2026-03-15.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">15</div>
+      <div class="issue-dow">日曜</div>
+      <div class="issue-vol">VOL.006</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">嵐「Five」MV公開・札幌ドーム最終日──We are ARASHI 全国ツアー完走へ</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#嵐ARASHI</span>
+        <span class="issue-tag">#RunwayGen4</span>
+        <span class="issue-tag">#hololiveSUPEREXPO</span>
+        <span class="issue-tag">#aespaドームツアー</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.005 -->
+<a class="issue-card" href="archives/2026-03-14.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">14</div>
+      <div class="issue-dow">土曜</div>
+      <div class="issue-vol">VOL.005</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">Kling AI 3.0 正式ローンチ──4K・60fps・全員がディレクターになれる時代へ</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#KlingAI3</span>
+        <span class="issue-tag">#MISIA横浜</span>
+        <span class="issue-tag">#YouTubeショッピング</span>
+        <span class="issue-tag">#縦型動画900億円</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.004 -->
+<a class="issue-card" href="archives/2026-03-13.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">13</div>
+      <div class="issue-dow">金曜</div>
+      <div class="issue-vol">VOL.004</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">動画広告市場、2026年に初の1兆円突破へ──縦型動画が牽引</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#動画広告1兆円</span>
+        <span class="issue-tag">#TikTokShopLocal</span>
+        <span class="issue-tag">#hololive7thfes</span>
+        <span class="issue-tag">#Sora2</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.003 -->
+<a class="issue-card" href="archives/2026-03-12.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">12</div>
+      <div class="issue-dow">木曜</div>
+      <div class="issue-vol">VOL.003</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">BTS 完全体ワールドツアー『ARIRANG』始動！東京ドーム2DAYS 4月17・18日・新アルバム3/20発売</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#BTS</span>
+        <span class="issue-tag">#K-POP</span>
+        <span class="issue-tag">#縦型動画</span>
+        <span class="issue-tag">#AI動画</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.002 -->
+<a class="issue-card" href="archives/2026-03-11.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">11</div>
+      <div class="issue-dow">水曜</div>
+      <div class="issue-vol">VOL.002</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">本日のトップ記事</div>
+      <div class="issue-headline">嵐「Five」オリコン史上最高記録！5年ぶり新曲で日本エンタメが沸騰</div>
+      <div class="issue-tags">
+        <span class="issue-tag">#嵐</span>
+        <span class="issue-tag">#YouTube収益化</span>
+        <span class="issue-tag">#AI分身</span>
+        <span class="issue-tag">#縦型動画</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<!-- VOL.001 創刊号 -->
+<a class="issue-card" href="archives/2026-03-10.html">
+  <div class="issue-inner">
+    <div class="issue-date-col">
+      <div class="issue-month">MAR</div>
+      <div class="issue-day">10</div>
+      <div class="issue-dow">火曜</div>
+      <div class="issue-vol">VOL.001</div>
+    </div>
+    <div class="issue-body">
+      <div class="issue-kicker">創刊号 SPECIAL</div>
+      <div class="issue-headline">デジタル映像市場4兆2,868億円突破！放送は8.7%減で明暗<span class="latest-badge">創刊号</span></div>
+      <div class="issue-tags">
+        <span class="issue-tag">#映像市場</span>
+        <span class="issue-tag">#hololive</span>
+        <span class="issue-tag">#BTS</span>
+        <span class="issue-tag">#Sora2</span>
+      </div>
+    </div>
+    <div class="issue-arrow">›</div>
+  </div>
+</a>
+
+<footer>
+  <div class="footer-title">田村<span>新聞</span> バックナンバー</div>
+  <div class="footer-url">tamura-shinbun.pages.dev/archive.html</div>
+  <div class="footer-info">
+    Powered by Claude × MMT inc.<br>
+    毎朝10時に最新号を自動配信
+  </div>
+</footer>
+
+</body>
+</html>

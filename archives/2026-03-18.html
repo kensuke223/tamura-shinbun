@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>田村新聞 VOL.010｜2026年3月18日</title>
+  <meta property="og:title" content="田村新聞 VOL.010｜ByteDance Seedance 2.0 グローバル展開を緊急延期"/>
+  <meta property="og:description" content="MMT inc.向けクリエイティブ情報メディア「田村新聞」第10号"/>
+  <meta property="og:image" content="https://techcrunch.com/wp-content/uploads/2019/08/GettyImages-1162754481.jpg"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:#f0ebe0;color:#111;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-size:14px;line-height:1.6;max-width:480px;margin:0 auto;}
+    .masthead-banner{background:#111;padding:14px 14px 12px;display:flex;align-items:flex-end;justify-content:space-between;}
+    .paper-title{font-size:44px;font-weight:900;letter-spacing:-.02em;line-height:1;}
+    .paper-title .t1{color:#fff;}
+    .paper-title .t2{color:#cc0000;}
+    .masthead-right{text-align:right;}
+    .vol-badge{background:#cc0000;color:#fff;font-size:10px;font-weight:900;padding:2px 8px;border-radius:2px;display:inline-block;margin-bottom:5px;letter-spacing:.1em;}
+    .issue-num{font-size:10px;color:#aaa;}
+    .date-bar{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:#f5f0e6;border-bottom:3px solid #cc0000;font-size:9px;color:#666;}
+    .archive-btn{background:#111;color:#fff;font-size:9px;font-weight:700;padding:2px 8px;border-radius:2px;text-decoration:none;}
+    .ticker-wrap{background:#cc0000;overflow:hidden;padding:7px 0;}
+    .ticker-inner{display:flex;animation:ticker 40s linear infinite;}
+    .ticker-item{white-space:nowrap;color:#fff;font-size:11px;font-weight:700;padding:0 30px;letter-spacing:.05em;}
+    @keyframes ticker{0%{transform:translateX(480px);}100%{transform:translateX(-100%);}}
+    .sec-head{background:#111;color:#fff;padding:8px 14px;font-size:12px;font-weight:900;letter-spacing:.1em;margin-top:10px;}
+    .sec-head span{color:#cc0000;}
+    .story-card{background:#fff;margin:2px 0;}
+    .story-img{width:100%;object-fit:cover;display:block;}
+    .story-img.hero{height:220px;}
+    .story-img.main{height:180px;}
+    .story-img.half{height:130px;}
+    .story-body{padding:12px 14px;}
+    .story-tag{display:inline-block;background:#cc0000;color:#fff;font-size:9px;font-weight:900;padding:1px 6px;border-radius:2px;margin-bottom:6px;letter-spacing:.08em;}
+    .story-tag.blue{background:#0066cc;}
+    .story-tag.green{background:#006600;}
+    .story-tag.orange{background:#cc6600;}
+    .story-tag.purple{background:#660099;}
+    .story-h{font-size:17px;font-weight:900;line-height:1.35;margin-bottom:6px;}
+    .story-h.hero-h{font-size:22px;}
+    .story-h.small-h{font-size:13px;}
+    .story-p{font-size:12px;color:#444;line-height:1.6;}
+    .source-url{font-size:10px;color:#888;margin-top:8px;word-break:break-all;}
+    .story-link{text-decoration:none;color:inherit;display:block;}
+    .story-link:hover .story-body{background:#fffaf5;}
+    .half-grid{display:flex;gap:2px;margin:0;}
+    .half-card{flex:1;background:#fff;}
+    .half-link{text-decoration:none;color:inherit;display:block;}
+    .half-link:hover .story-body{background:#fffaf5;}
+    .quote-box{background:#111;color:#fff;margin:2px 0;padding:16px 14px;}
+    .quote-mark{font-size:36px;color:#cc0000;line-height:1;font-weight:900;}
+    .quote-text{font-size:14px;font-weight:700;line-height:1.5;margin:6px 0;}
+    .quote-src{font-size:10px;color:#aaa;margin-top:4px;}
+    .alert-bar{background:#ffdd00;border-left:5px solid #cc0000;padding:8px 14px;margin:2px 0;font-size:11px;font-weight:700;color:#111;}
+    .ranking-list{background:#fff;margin:2px 0;padding:6px 0;}
+    .rank-item{display:flex;align-items:center;padding:8px 14px;border-bottom:1px solid #f0ebe0;}
+    .rank-item:last-child{border-bottom:none;}
+    .rank-num{font-size:22px;font-weight:900;color:#cc0000;min-width:36px;line-height:1;}
+    .rank-num.gold{color:#cc9900;}.rank-num.silver{color:#888;}.rank-num.bronze{color:#c07030;}
+    .rank-word{font-size:13px;font-weight:700;flex:1;}
+    .rank-move{font-size:10px;font-weight:700;}
+    .rank-move.up{color:#cc0000;}.rank-move.new{color:#0066cc;}
+    .num-bar{background:#fff;margin:2px 0;padding:12px 14px;display:flex;gap:0;}
+    .num-item{flex:1;text-align:center;border-right:1px solid #f0ebe0;}
+    .num-item:last-child{border-right:none;}
+    .num-big{font-size:26px;font-weight:900;color:#cc0000;line-height:1;}
+    .num-unit{font-size:10px;font-weight:700;color:#cc0000;}
+    .num-label{font-size:9px;color:#666;margin-top:3px;line-height:1.3;}
+    .tool-grid{display:flex;flex-wrap:wrap;gap:2px;margin:0;}
+    .tool-card{width:calc(50% - 1px);background:#111;padding:12px 14px;}
+    .tool-name{font-size:13px;font-weight:900;color:#fff;margin-bottom:4px;}
+    .tool-maker{font-size:9px;color:#cc0000;font-weight:700;margin-bottom:6px;}
+    .tool-desc{font-size:11px;color:#aaa;line-height:1.5;}
+    .tool-img{width:100%;height:70px;object-fit:cover;display:block;margin-bottom:8px;}
+    .tool-link{text-decoration:none;color:inherit;}
+    .insight-section{background:#111;margin:10px 0 0;padding:20px 14px 24px;}
+    .insight-title{font-size:16px;font-weight:900;color:#cc0000;letter-spacing:.1em;margin-bottom:14px;}
+    .insight-list{list-style:none;}
+    .insight-list li{color:#fff;font-size:13px;line-height:1.5;padding:10px 0;border-bottom:1px solid #333;}
+    .insight-list li:last-child{border-bottom:none;}
+    .insight-num{display:inline-block;background:#cc0000;color:#fff;font-size:10px;font-weight:900;width:22px;height:22px;text-align:center;line-height:22px;border-radius:50%;margin-right:8px;}
+    .footer{background:#111;color:#aaa;text-align:center;padding:16px 14px;font-size:9px;border-top:3px solid #cc0000;}
+    .footer a{color:#cc0000;}
+    .img-fallback{display:flex;align-items:center;justify-content:center;font-weight:900;color:rgba(255,255,255,0.55);font-size:13px;letter-spacing:.1em;text-align:center;padding:12px;text-shadow:0 1px 3px rgba(0,0,0,0.3);}
+  </style>
+</head>
+<body>
+
+<header class="masthead-banner">
+  <div class="paper-title"><span class="t1">田村</span><span class="t2">新聞</span></div>
+  <div class="masthead-right">
+    <div class="vol-badge">VOL.010 第10号</div>
+    <div class="issue-num">DAILY CREATIVE INTELLIGENCE</div>
+  </div>
+</header>
+<div class="date-bar">
+  <span>2026年3月18日（水）｜MMT inc. クリエイティブ情報局</span>
+  <a href="../archive.html" class="archive-btn">バックナンバー →</a>
+</div>
+
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <div class="ticker-item">⚡ ByteDance「Seedance 2.0」ハリウッド著作権問題でグローバル展開を延期</div>
+    <div class="ticker-item">⚡ YouTube ショッピング アフィリエイトが日本上陸──楽天が初パートナー</div>
+    <div class="ticker-item">⚡ DREAMS COME TRUE 9年ぶり新アルバム「THE BLACK ◯ ALBUM」本日リリース</div>
+    <div class="ticker-item">⚡ Instagram for TVがGoogle TVに正式対応──リールを大画面で</div>
+    <div class="ticker-item">⚡ 世界初VTuber博覧会「VTUBER EXPO 2026」GWに秋葉原で開催決定</div>
+  </div>
+</div>
+
+<!-- 1. HERO -->
+<div class="sec-head">🔥 <span>TODAY'S TOP</span>｜本日のトップニュース</div>
+<div class="story-card">
+  <a class="story-link" href="https://techcrunch.com/2026/03/15/bytedance-reportedly-pauses-global-launch-of-its-seedance-2-0-video-generator/" target="_blank" rel="noopener">
+    <img class="story-img hero" src="https://techcrunch.com/wp-content/uploads/2019/08/GettyImages-1162754481.jpg" alt="ByteDance Seedance 2.0"/>
+    <div class="story-body">
+      <div class="story-tag">速報</div>
+      <h2 class="story-h hero-h">ByteDance「Seedance 2.0」グローバル展開を緊急延期──ハリウッド著作権訴訟が映像AI市場に激震</h2>
+      <p class="story-p">ByteDanceが2月にリリースしたAI動画生成モデル「Seedance 2.0」のグローバル展開が、ハリウッドスタジオからの著作権侵害訴訟により延期された。Tom CruiseやBrad Pittのディープフェイク映像がSNSで拡散し、ディズニーが停止要求を送付。AI映像生成ツールの著作権問題が業界全体の今後を左右する重大局面に。</p>
+      <div class="source-url">🔗 出典：TechCrunch｜ByteDance pauses global launch of Seedance 2.0</div>
+    </div>
+  </a>
+</div>
+
+<!-- 2. 映像クリエイティブ業界 -->
+<div class="sec-head">🎬 <span>映像クリエイティブ業界</span>｜PRODUCTION NEWS</div>
+<div class="story-card">
+  <a class="story-link" href="https://mvsk.jp/column/190139" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://mvsk.jp/wp-content/uploads/2024/06/video-content-market-size.jpg" alt="動画コンテンツ市場"/>
+    <div class="story-body">
+      <div class="story-tag">市場動向</div>
+      <h3 class="story-h">動画コンテンツ市場が2026年さらに拡大──AI活用・縦型動画で制作会社の勝機到来</h3>
+      <p class="story-p">動画コンテンツ市場は技術進歩と消費者ニーズの変化により年々拡大。オンラインプラットフォームの成長でウェブシリーズやYouTubeコンテンツ制作が増加。VR・ARなど新技術活用で没入感のある体験提供も加速。中小映像制作会社にとって多様なクライアント需要への対応が成長の鍵に。</p>
+      <div class="source-url">🔗 出典：ムビサク｜動画コンテンツ市場2026年最新レポート</div>
+    </div>
+  </a>
+</div>
+<div class="half-grid">
+  <div class="half-card">
+    <a class="half-link" href="https://lumii.co.jp/blog/video-production-company/" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://lumii.co.jp/blog/wp-content/uploads/2024/08/video-production-company.jpg" alt="Lumii"/>
+      <div class="story-body">
+        <div class="story-tag blue">注目</div>
+        <h4 class="story-h small-h">Lumii Video Hub──従来の1/3以下のコストで高品質動画制作を実現</h4>
+        <div class="source-url">🔗 Lumii</div>
+      </div>
+    </a>
+  </div>
+  <div class="half-card">
+    <a class="half-link" href="https://videosalon.jp/news/" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://videosalon.jp/wp-content/uploads/2025/01/ogp_vs.jpg" alt="VIDEO SALON"/>
+      <div class="story-body">
+        <div class="story-tag green">技術</div>
+        <h4 class="story-h small-h">TYO学生ムービーアワード──最終ノミネート5作品発表</h4>
+        <div class="source-url">🔗 VIDEO SALON</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- 3. SNS動向 -->
+<div class="sec-head">📱 <span>SNS動向</span>｜PLATFORM UPDATE</div>
+<div class="quote-box">
+  <div class="quote-mark">"</div>
+  <div class="quote-text">LINE国内利用者1億人突破、全年代で90%以上が利用するメディアに成長──Instagram for TVがGoogle TVに正式対応</div>
+  <div class="quote-src">── 総務省調査 2026年1月 / Meta</div>
+</div>
+<div class="story-card">
+  <a class="story-link" href="https://blog.youtube/intl/ja-jp/news-and-events/youtube-shopping-affiliate-jp-launch/" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image1_3_ej4eliH.max-1440x810.png" alt="YouTube ショッピング"/>
+    <div class="story-body">
+      <div class="story-tag blue">NEW</div>
+      <h3 class="story-h">YouTube ショッピング アフィリエイトが日本上陸──楽天市場が国内初パートナー</h3>
+      <p class="story-p">YouTubeは2月19日、クリエイターが動画内で商品をタグ付けし、視聴者が直接購入できるプログラムを日本に導入。長尺動画、ショート、ライブ配信で楽天市場の商品をタグ付け可能。動画×ECの新たな収益モデルが日本市場でも本格始動。</p>
+      <div class="source-url">🔗 出典：YouTube Japan 公式ブログ</div>
+    </div>
+  </a>
+</div>
+<div class="alert-bar">📺 Instagram for TVがGoogle TVに正式対応！リールを大画面で視聴可能に──YouTube対抗の大画面戦略加速</div>
+
+<!-- 4. 検索ワードランキング -->
+<div class="sec-head">🔍 <span>検索ワードランキング</span>｜TRENDING NOW</div>
+<div class="ranking-list">
+  <div class="rank-item"><div class="rank-num gold">1</div><div class="rank-word">Seedance 2.0 著作権</div><div class="rank-move new">NEW</div></div>
+  <div class="rank-item"><div class="rank-num silver">2</div><div class="rank-word">DREAMS COME TRUE</div><div class="rank-move up">↑3</div></div>
+  <div class="rank-item"><div class="rank-num bronze">3</div><div class="rank-word">YouTube ショッピング 楽天</div><div class="rank-move new">NEW</div></div>
+  <div class="rank-item"><div class="rank-num">4</div><div class="rank-word">CENTRAL 2026 横浜</div><div class="rank-move up">↑2</div></div>
+  <div class="rank-item"><div class="rank-num">5</div><div class="rank-word">Instagram TV対応</div><div class="rank-move new">NEW</div></div>
+  <div class="rank-item"><div class="rank-num">6</div><div class="rank-word">VTUBER EXPO 2026</div><div class="rank-move new">NEW</div></div>
+  <div class="rank-item"><div class="rank-num">7</div><div class="rank-word">AI動画生成 三国志時代</div><div class="rank-move up">↑5</div></div>
+  <div class="rank-item"><div class="rank-num">8</div><div class="rank-word">縦型動画広告 900億円</div><div class="rank-move">→</div></div>
+</div>
+
+<!-- 5. 投稿・コンテンツムーブメント -->
+<div class="sec-head">📊 <span>投稿・コンテンツムーブメント</span>｜CONTENT WAVE</div>
+<div class="story-card">
+  <a class="story-link" href="https://www.comnico.jp/we-love-social/sns-news" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://www.comnico.jp/hubfs/WLS_blog/202312/snsnews/wls_SNS-news.webp" alt="TikTok LIVE サブスク"/>
+    <div class="story-body">
+      <div class="story-tag orange">トレンド</div>
+      <h3 class="story-h">TikTok「LIVEサブスクリプション」機能を拡大──クリエイター月額課金モデルの新時代へ</h3>
+      <p class="story-p">TikTokがLIVEサブスクリプション機能の提供範囲を拡大。月額料金でフォロワーに特別特典・メンバー限定コミュニティを提供可能に。YouTubeメンバーシップに続くSNSの直接課金モデルが、コンテンツクリエイターの収益構造を根本から変革。</p>
+      <div class="source-url">🔗 出典：コムニコ｜2026年3月版 SNSニュースまとめ</div>
+    </div>
+  </a>
+</div>
+<div class="alert-bar">📢 2026年トレンド：縦型動画クリエイティブ×ショートドラマ×ライブコマース──3本柱時代が到来</div>
+
+<!-- 6. VTuber / Vsinger -->
+<div class="sec-head">🎤 <span>VTuber / Vsinger</span>｜VIRTUAL ARTIST</div>
+<div class="story-card">
+  <a class="story-link" href="https://prtimes.jp/main/html/rd/p/000000031.000098528.html" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://prcdn.freetls.fastly.net/release_image/98528/31/98528-31-a0cd234b5c15821cb69039a86ac6a831-1920x1080.png" alt="VTUBER EXPO 2026"/>
+    <div class="story-body">
+      <div class="story-tag purple">EVENT</div>
+      <h3 class="story-h">世界初VTuber体験型博覧会「VTUBER EXPO 2026」──GWに秋葉原ベルサールで開催、入場無料</h3>
+      <p class="story-p">VEXZが主催する世界初のVTuber体験型博覧会が5月3日-4日にベルサール秋葉原で開催決定。モーションキャプチャでVTuber体験、1on1トーク、ミニライブ、プロデューサートークショーなど。VTuber文化初体験の来場者や訪日観光客もターゲットに。</p>
+      <div class="source-url">🔗 出典：PR TIMES（VEXZ）｜VTUBER EXPO 2026</div>
+    </div>
+  </a>
+</div>
+<div class="half-grid">
+  <div class="half-card">
+    <a class="half-link" href="https://prtimes.jp/main/html/rd/p/000000002.000178303.html" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://prcdn.freetls.fastly.net/release_image/178303/2/178303-2-01af8f668f70d4060d3a1818b4d04f44-1920x1080.png" alt="ばちゃすて！"/>
+      <div class="story-body">
+        <div class="story-tag purple">ライブ</div>
+        <h4 class="story-h small-h">ばちゃすて！Vol.0──VSinger 9組結集の渋谷ライブ5/23、先行抽選受付中</h4>
+        <div class="source-url">🔗 PR TIMES</div>
+      </div>
+    </a>
+  </div>
+  <div class="half-card">
+    <a class="half-link" href="https://e.usen.com/news/news-event/central-central-stage.html" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://e.usen.com/image/5f44c2dc2b0fbb709d114981ee6763500fc874fc.jpg" alt="CENTRAL 2026"/>
+      <div class="story-body">
+        <div class="story-tag purple">フェス</div>
+        <h4 class="story-h small-h">CENTRAL 2026──星街すいせい出演決定、VTuberがリアルフェスのメインステージへ</h4>
+        <div class="source-url">🔗 USEN encore</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- 7. ライブ・イベント業界 -->
+<div class="sec-head">🎵 <span>ライブ・イベント業界</span>｜LIVE & EVENT</div>
+<div class="story-card">
+  <a class="story-link" href="https://www.yokohama-arena.co.jp/event" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://www.yokohama-arena.co.jp/common/img/common/ogimage.png" alt="DREAMS COME TRUE"/>
+    <div class="story-body">
+      <div class="story-tag">本日発売</div>
+      <h3 class="story-h">DREAMS COME TRUE、9年ぶり新アルバム「THE BLACK ◯ ALBUM」本日リリース──全国アリーナツアーも3/21開幕</h3>
+      <p class="story-p">9年ぶり19枚目のオリジナルアルバムを本日リリース。全14曲収録、全7形態。3月21日から全国アリーナツアーが9月27日まで巡回。横浜アリーナ公演は3月21日。ライブ映像制作・配信案件の増大が見込まれる。</p>
+      <div class="source-url">🔗 出典：横浜アリーナ｜DREAMS COME TRUE CONCERT TOUR 2026</div>
+    </div>
+  </a>
+</div>
+<div class="half-grid">
+  <div class="half-card">
+    <a class="half-link" href="https://e.usen.com/news/news-event/central-central-stage.html" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://e.usen.com/image/5f44c2dc2b0fbb709d114981ee6763500fc874fc.jpg" alt="CENTRAL 2026"/>
+      <div class="story-body">
+        <div class="story-tag green">開催</div>
+        <h4 class="story-h small-h">CENTRAL 2026──横浜4月開催、YOASOBI・乃木坂46ら34組出演</h4>
+        <div class="source-url">🔗 USEN encore</div>
+      </div>
+    </a>
+  </div>
+  <div class="half-card">
+    <a class="half-link" href="https://www.duke.co.jp/ha/" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://www.duke.co.jp/ha/img/logo_pc.png" alt="Hello Arena 2026"/>
+      <div class="story-body">
+        <div class="story-tag blue">フェス</div>
+        <h4 class="story-h small-h">Hello Arena 2026──中四国最大級の屋内フェス、マキシマム ザ ホルモンら出演</h4>
+        <div class="source-url">🔗 DUKE</div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="quote-box">
+  <div class="quote-mark">"</div>
+  <div class="quote-text">2026年世界広告費は4.3%増の8,184億ドル──デジタル広告比率が初めて60%台に到達</div>
+  <div class="quote-src">── 電通グループ予測</div>
+</div>
+
+<!-- 8. 縦型動画トレンド -->
+<div class="sec-head">📐 <span>縦型動画トレンド</span>｜VERTICAL VIDEO</div>
+<div class="story-card">
+  <a class="story-link" href="https://dfplus.io/blog/vertical-short-video-ads-20250326" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://storage.googleapis.com/studio-cms-assets/projects/1Va6d4L2O7/s-2400x1260_v-frms_webp_46d478a7-eaf8-437a-a6c9-4e16c8fc26da.png" alt="縦型動画広告"/>
+    <div class="story-body">
+      <div class="story-tag orange">DATA</div>
+      <h3 class="story-h">縦型動画広告市場が2026年に900億円突破見込み──前年比171%増の急成長</h3>
+      <p class="story-p">TikTok・Instagram Reels・YouTube Shortsの3大プラットフォームが市場を牽引。30秒以内の短尺コンテンツがエンゲージメント率向上に効果的。映像制作会社にとって縦型動画のクリエイティブ力が差別化の鍵。</p>
+      <div class="source-url">🔗 出典：dfplus.io｜縦型ショート動画広告のトレンドと運用のコツ</div>
+    </div>
+  </a>
+</div>
+<div class="num-bar">
+  <div class="num-item"><div class="num-big">900<span class="num-unit">億円</span></div><div class="num-label">縦型動画広告<br>市場規模</div></div>
+  <div class="num-item"><div class="num-big">171<span class="num-unit">%</span></div><div class="num-label">前年比<br>成長率</div></div>
+  <div class="num-item"><div class="num-big">30<span class="num-unit">秒</span></div><div class="num-label">最適<br>動画長</div></div>
+  <div class="num-item"><div class="num-big">90<span class="num-unit">%</span></div><div class="num-label">AI活用<br>広告主比率</div></div>
+</div>
+
+<!-- 9. AI×映像制作ツール -->
+<div class="sec-head">🤖 <span>AI × 映像制作ツール</span>｜AI VIDEO</div>
+<div class="story-card">
+  <a class="story-link" href="https://www.generativeai.tokyo/media/ai-video-generation-tools/" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://images.ctfassets.net/kftzwdyauwt9/1Q8NDmnyavsoPAKDlWpW18/a1f595376097668d1772c9cac40fc8ee/16_x_9____1_.png" alt="AI動画生成ツール"/>
+    <div class="story-body">
+      <div class="story-tag blue">AI</div>
+      <h3 class="story-h">AI動画生成「三国志」時代へ──Sora 2・Veo 3.1・Kling 2.6が音声統合で新次元</h3>
+      <p class="story-p">2026年のAI動画生成ツール市場はOpenAI Sora 2、Google Veo 3.1、快手Kling 2.6が三強に。いずれもネイティブオーディオ生成に対応。Runway Gen-4.5はベンチマークスコアNo.1でモーションブラシが強み。</p>
+      <div class="source-url">🔗 出典：生成AI総合研究所｜AI動画生成ツール完全比較2026</div>
+    </div>
+  </a>
+</div>
+<div class="tool-grid">
+  <div class="tool-card">
+    <a class="tool-link" href="https://openai.com/sora" target="_blank" rel="noopener">
+      <img class="tool-img" src="https://images.ctfassets.net/kftzwdyauwt9/1Q8NDmnyavsoPAKDlWpW18/a1f595376097668d1772c9cac40fc8ee/16_x_9____1_.png" alt="Sora 2"/>
+      <div class="tool-name">Sora 2</div>
+      <div class="tool-maker">OpenAI</div>
+      <div class="tool-desc">映像+音声統合生成。物理法則再現。マルチシーン対応。</div>
+    </a>
+  </div>
+  <div class="tool-card">
+    <a class="tool-link" href="https://deepmind.google/technologies/veo/" target="_blank" rel="noopener">
+      <img class="tool-img" src="https://lh3.googleusercontent.com/4TQ0VW03H2RZ-j8JzVedHbVAPLbVMhcpLT0H-ULaVPR7GXKV_LJL1w1JqYOYhZLKS5rR6lLCDq7L5Ff18FpzHNn7lQ6I=s1200" alt="Veo 3.1"/>
+      <div class="tool-name">Veo 3.1</div>
+      <div class="tool-maker">Google DeepMind</div>
+      <div class="tool-desc">最大1分動画。光・動きの自然表現。2K出力対応。</div>
+    </a>
+  </div>
+  <div class="tool-card">
+    <a class="tool-link" href="https://klingai.com/" target="_blank" rel="noopener">
+      <img class="tool-img" src="https://img.alicdn.com/imgextra/i1/O1CN01dg2OmN1LK1VH9wFzQ_!!6000000001280-2-tps-1200-630.png" alt="Kling 2.6"/>
+      <div class="tool-name">Kling 2.6</div>
+      <div class="tool-maker">快手（Kuaishou）</div>
+      <div class="tool-desc">最大3分動画。月$5のコスパ。中国市場シェアNo.1。</div>
+    </a>
+  </div>
+  <div class="tool-card">
+    <a class="tool-link" href="https://runwayml.com/" target="_blank" rel="noopener">
+      <img class="tool-img" src="https://runwayml.com/opengraph-image.png" alt="Runway Gen-4.5"/>
+      <div class="tool-name">Runway Gen-4.5</div>
+      <div class="tool-maker">Runway</div>
+      <div class="tool-desc">ベンチマークNo.1。モーションブラシ。シーン一貫性。</div>
+    </a>
+  </div>
+</div>
+
+<!-- 10. 海外トレンド -->
+<div class="sec-head">🌏 <span>海外トレンド</span>｜GLOBAL CREATIVE</div>
+<div class="story-card">
+  <a class="story-link" href="https://business.adobe.com/jp/resources/creative-trends-report.html" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://business.adobe.com/jp/resources/media_1232590653775bb3162f4d90bbb48dc5880354e72.png" alt="Adobe Trends 2026"/>
+    <div class="story-body">
+      <div class="story-tag green">GLOBAL</div>
+      <h3 class="story-h">Adobe「2026年クリエイティブトレンド」発表──感情的つながりとマルチセンサリー体験が鍵に</h3>
+      <p class="story-p">65%の顧客が従来の枠を超えたキャンペーンで驚かせてくれるブランドを求めている。米国CTV広告費は430億ドル規模に成長。AI生成クリエイティブの浸透で、広告主の約90%が生成AIで動画クリエイティブを制作する時代に。</p>
+      <div class="source-url">🔗 出典：Adobe｜Creative Trends Report 2026</div>
+    </div>
+  </a>
+</div>
+
+<!-- 11. 競合・同業者動向 -->
+<div class="sec-head">🏢 <span>競合・同業者動向</span>｜INDUSTRY WATCH</div>
+<div class="half-grid">
+  <div class="half-card">
+    <a class="half-link" href="https://castas.jp/journal/film-production-companies-japan-2026" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://castas.jp/hubfs/thumb-01-5-1.png" alt="BitStar"/>
+      <div class="story-body">
+        <div class="story-tag">競合</div>
+        <h4 class="story-h small-h">BitStar──ナレッジワーク社のYouTubeチャンネル運用を担当、企業YouTube市場を席巻</h4>
+        <div class="source-url">🔗 CASTAS</div>
+      </div>
+    </a>
+  </div>
+  <div class="half-card">
+    <a class="half-link" href="https://stock-sun.com/column/movie-production-majarcompany/" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://stock-sun.com/cdn-cgi/image/quality=75,format=webp,fit=scale-down,width=1920/wp-content/uploads/2025/03/camera-6745942_1280.jpg" alt="制作会社動向"/>
+      <div class="story-body">
+        <div class="story-tag blue">動向</div>
+        <h4 class="story-h small-h">Mteam（ウミガメ）──1,200アカウント・3万本超の制作実績でワンストップ制作</h4>
+        <div class="source-url">🔗 StockSun</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- 12. TODAY'S INSIGHT -->
+<div class="insight-section">
+  <div class="insight-title">📌 TODAY'S INSIGHT｜MMTが今日動くべき4つのこと</div>
+  <ul class="insight-list">
+    <li><span class="insight-num">1</span><strong>Seedance 2.0の著作権問題を「AI映像制作リスク管理」として社内共有</strong>──自社AI活用ガイドラインの策定を検討開始せよ</li>
+    <li><span class="insight-num">2</span><strong>YouTube ショッピング×楽天の新アフィリエイトモデルを商品化</strong>──「動画×EC」コンテンツ制作の新規提案メニューとして営業展開</li>
+    <li><span class="insight-num">3</span><strong>CENTRAL 2026・ドリカムツアー等の大型ライブ案件のクルー体制・機材確保を早期着手</strong>──春〜秋のアリーナシーズンが本格始動</li>
+    <li><span class="insight-num">4</span><strong>縦型動画クリエイティブの専門チーム強化を</strong>──市場900億円時代に「30秒で伝える力」が最重要スキルに</li>
+  </ul>
+</div>
+
+<footer class="footer">
+  <p>田村新聞 VOL.010｜2026年3月18日（水）発行</p>
+  <p>MMT inc. クリエイティブ情報局｜<a href="../archive.html">バックナンバー</a></p>
+  <p style="margin-top:6px;">※本紙は自動生成されたクリエイティブ業界速報です</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+var gs=["linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%)","linear-gradient(135deg,#2d1b69 0%,#11998e 100%)","linear-gradient(135deg,#0c0c0c 0%,#333 50%,#1a1a1a 100%)","linear-gradient(135deg,#cc0000 0%,#660000 100%)","linear-gradient(135deg,#003d5b 0%,#00838f 100%)","linear-gradient(135deg,#4a148c 0%,#7b1fa2 100%)"];
+var i=0;
+document.querySelectorAll("img").forEach(function(img){
+function fix(){
+var d=document.createElement("div");
+d.className=img.className+" img-fallback";
+d.style.background=gs[i%gs.length];
+var t=img.alt||"";
+if(t.length>20)t=t.substring(0,20)+"…";
+d.textContent=t;
+img.parentNode.replaceChild(d,img);
+i++;
+}
+img.addEventListener("error",fix);
+if(img.complete&&img.naturalWidth===0&&img.src)fix();
+});
+});
+</script>
+</body>
+</html>

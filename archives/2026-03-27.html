@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>田村新聞 VOL.019｜2026年3月27日</title>
+  <meta property="og:title" content="田村新聞 VOL.019｜AnimeJapan 2026 明日開幕──Gemini 2.5 Pro 無料展開・九条の大罪カウントダウン"/>
+  <meta property="og:description" content="MMT inc.向けクリエイティブ情報メディア「田村新聞」第19号"/>
+  <meta property="og:image" content="https://www.anime-japan.jp/img/common/ogp-aj2206.jpg"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:#f0ebe0;color:#111;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-size:14px;line-height:1.6;max-width:480px;margin:0 auto;}
+    .masthead-banner{background:#111;padding:14px 14px 12px;display:flex;align-items:flex-end;justify-content:space-between;}
+    .paper-title{font-size:44px;font-weight:900;letter-spacing:-.02em;line-height:1;}
+    .paper-title .t1{color:#fff;}
+    .paper-title .t2{color:#cc0000;}
+    .masthead-right{text-align:right;}
+    .vol-badge{background:#cc0000;color:#fff;font-size:10px;font-weight:900;padding:2px 8px;border-radius:2px;display:inline-block;margin-bottom:5px;letter-spacing:.1em;}
+    .issue-num{font-size:10px;color:#aaa;}
+    .date-bar{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:#f5f0e6;border-bottom:3px solid #cc0000;font-size:9px;color:#666;}
+    .archive-btn{background:#111;color:#fff;font-size:9px;font-weight:700;padding:2px 8px;border-radius:2px;text-decoration:none;}
+    .ticker-wrap{background:#cc0000;overflow:hidden;padding:7px 0;}
+    .ticker-inner{display:flex;animation:ticker 42s linear infinite;}
+    .ticker-item{white-space:nowrap;color:#fff;font-size:11px;font-weight:700;padding:0 30px;letter-spacing:.05em;}
+    @keyframes ticker{0%{transform:translateX(480px);}100%{transform:translateX(-100%);}}
+    .sec-head{background:#111;color:#fff;padding:8px 14px;font-size:12px;font-weight:900;letter-spacing:.1em;margin-top:10px;}
+    .sec-head span{color:#cc0000;}
+    .story-card{background:#fff;margin:2px 0;}
+    .story-img{width:100%;object-fit:cover;display:block;background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);}
+    .story-img.hero{height:220px;}
+    .story-img.main{height:180px;}
+    .story-img.half{height:130px;}
+    .story-body{padding:12px 14px;}
+    .story-tag{display:inline-block;background:#cc0000;color:#fff;font-size:9px;font-weight:900;padding:1px 6px;border-radius:2px;margin-bottom:6px;letter-spacing:.08em;}
+    .story-tag.blue{background:#0066cc;}
+    .story-tag.green{background:#006600;}
+    .story-tag.orange{background:#cc6600;}
+    .story-tag.purple{background:#660099;}
+    .story-tag.navy{background:#003366;}
+    .story-h{font-size:17px;font-weight:900;line-height:1.35;margin-bottom:6px;}
+    .story-h.hero-h{font-size:22px;}
+    .story-h.small-h{font-size:13px;}
+    .story-p{font-size:12px;color:#444;line-height:1.6;}
+    .source-url{font-size:10px;color:#888;margin-top:8px;word-break:break-all;}
+    .story-link{text-decoration:none;color:inherit;display:block;}
+    .story-link:hover .story-body{background:#fffaf5;}
+    .half-grid{display:flex;gap:2px;margin:0;}
+    .half-card{flex:1;background:#fff;}
+    .half-link{text-decoration:none;color:inherit;display:block;}
+    .half-link:hover .story-body{background:#fffaf5;}
+    .quote-box{background:#fff;margin:2px 0;padding:16px 14px;border-left:4px solid #cc0000;}
+    .quote-text{font-size:15px;font-weight:900;line-height:1.4;margin-bottom:4px;}
+    .quote-src{font-size:10px;color:#888;}
+    .alert-bar{background:#ffdd00;padding:8px 14px;font-size:11px;font-weight:900;color:#111;letter-spacing:.02em;}
+    .alert-bar span{color:#cc0000;}
+    .rank-list{background:#fff;margin:2px 0;padding:0;}
+    .rank-item{display:flex;align-items:center;padding:8px 14px;border-bottom:1px solid #f0ebe0;}
+    .rank-num{font-size:18px;font-weight:900;color:#cc0000;min-width:28px;}
+    .rank-text{font-size:12px;font-weight:700;flex:1;}
+    .rank-badge{font-size:9px;background:#f0ebe0;padding:1px 6px;border-radius:8px;color:#666;}
+    .num-bar{background:#111;color:#fff;display:flex;justify-content:space-around;padding:12px 10px;text-align:center;margin:2px 0;}
+    .num-item .num-val{font-size:22px;font-weight:900;color:#cc0000;line-height:1;}
+    .num-item .num-label{font-size:9px;color:#aaa;letter-spacing:.02em;}
+    .tool-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin:2px 0;}
+    .tool-card{background:#fff;padding:10px;text-align:center;}
+    .tool-name{font-size:11px;font-weight:900;margin-bottom:2px;}
+    .tool-desc{font-size:9px;color:#888;}
+    .tool-score{font-size:16px;font-weight:900;color:#cc0000;margin-bottom:4px;}
+    .insight-section{background:#111;padding:18px 14px;margin-top:10px;}
+    .insight-title{color:#cc0000;font-size:14px;font-weight:900;margin-bottom:12px;letter-spacing:.1em;}
+    .insight-item{color:#fff;font-size:12px;line-height:1.6;padding:8px 0;border-bottom:1px solid #333;}
+    .insight-item:last-child{border-bottom:none;}
+    .insight-num{color:#cc0000;font-weight:900;font-size:16px;margin-right:6px;}
+    .footer{background:#111;color:#aaa;padding:20px 14px;font-size:9px;text-align:center;margin-top:10px;line-height:1.8;}
+    .footer a{color:#cc0000;text-decoration:none;}
+  </style>
+</head>
+<body>
+
+<!-- ===== MASTHEAD ===== -->
+<div class="masthead-banner">
+  <div class="paper-title"><span class="t1">田村</span><span class="t2">新聞</span></div>
+  <div class="masthead-right">
+    <div class="vol-badge">VOL.019 第19号</div>
+    <div class="issue-num">2026年3月27日</div>
+  </div>
+</div>
+<div class="date-bar">
+  <span>2026年3月27日（金曜日）</span>
+  <a class="archive-btn" href="../archive.html">📚 バックナンバー</a>
+</div>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <div class="ticker-item">⚡ AnimeJapan 2026 明日いよいよ開幕──東京ビッグサイト、過去最大200ステージ・120社・当日券2,800円</div>
+    <div class="ticker-item">⚡ Netflix「九条の大罪」4/2世界配信まであと6日──羊文学「Dogs」再生数が急上昇中</div>
+    <div class="ticker-item">⚡ Gemini 2.5 Pro 無料ユーザー展開拡大──LMArena世界1位AIが一般提供へ</div>
+    <div class="ticker-item">⚡ 嵐「We are ARASHI」東京ドーム公演4/1・2まであと5日──ファイナル5/31に向け盛り上がり最高潮</div>
+    <div class="ticker-item">⚡ ChatGPT・Gemini・Claude 2026年3月最新比較──映像制作者が選ぶAIツールの基準が変わった</div>
+    <div class="ticker-item">⚡ 花畑チャイカ 新3D衣装配信明日──3/29（日）20時よりにじさんじライブ配信</div>
+    <div class="ticker-item">⚡ AnimeJapan 2026 明日いよいよ開幕──東京ビッグサイト、過去最大200ステージ・120社・当日券2,800円</div>
+  </div>
+</div>
+
+<!-- ===== 1. アニメ・エンタメ ===== -->
+<div class="sec-head">🎌 <span>アニメ・エンタメ</span></div>
+<div class="story-card">
+  <a class="story-link" href="https://anime-japan.jp/" target="_blank" rel="noopener">
+    <img class="story-img hero" src="https://www.anime-japan.jp/img/common/ogp-aj2206.jpg" alt="AnimeJapan 2026 明日開幕" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#cc0000,#880000,#440000)';this.style.height='220px'"/>
+    <div class="story-body">
+      <div class="story-tag">🔴 本日トップ</div>
+      <div class="story-h hero-h">AnimeJapan 2026 明日いよいよ開幕──「新人クリエイター大賞」創設・過去最大規模で日本アニメ産業が次世代へ</div>
+      <div class="story-p">3月28日（土）・29日（日）に東京ビッグサイトで開幕するAnimeJapan 2026が明日に迫った。延べ200ステージ・出演者500人超・出展社120社超という過去最大規模。当日券は2,800円で5:00より販売開始。今年の最大のトピックは「新人クリエイター大賞」の新設で、アニメ・映像業界が次世代の人材を業界全体で発掘・育成していく姿勢を打ち出した。ファミリーアニメフェスタも同時開催。</div>
+      <div class="source-url">🔗 出典：AnimeJapan 2026 公式｜明日開幕</div>
+    </div>
+  </a>
+</div>
+<div class="half-grid">
+  <div class="half-card">
+    <a class="half-link" href="https://natalie.mu/music/news/665056" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://ogre.natalie.mu/media/news/music/2026/0323/hitsujibungaku_jkt202603.jpg" alt="九条の大罪 Netflix 羊文学" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#0d0d1a,#1a0033,#330022)';this.style.height='130px'"/>
+      <div class="story-body">
+        <div class="story-tag">音楽</div>
+        <div class="story-h small-h">Netflix「九条の大罪」4/2配信まで6日──羊文学「Dogs」再生急上昇、期待感が最高潮</div>
+        <div class="source-url">🔗 音楽ナタリー</div>
+      </div>
+    </a>
+  </div>
+  <div class="half-card">
+    <a class="half-link" href="https://natalie.mu/music/news/649224" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://ogre.natalie.mu/media/news/music/2024/0109/defoultimage_arashi.jpg" alt="嵐 東京ドーム" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#003380,#001155)';this.style.height='130px'"/>
+      <div class="story-body">
+        <div class="story-tag navy">音楽</div>
+        <div class="story-h small-h">嵐「We are ARASHI」東京ドーム4/1・2まで5日──ラストスパート、ファン熱狂</div>
+        <div class="source-url">🔗 音楽ナタリー</div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="alert-bar">📅 <span>今週末イベント</span>｜AnimeJapan 2026（3/28-29 東京ビッグサイト）＋ 花畑チャイカ新3D衣装配信（3/29 20時）──クリエイター・VTuberファン必見の週末</div>
+
+<!-- ===== 2. AI×映像制作ツール ===== -->
+<div class="sec-head">🤖 <span>AI×映像制作ツール</span></div>
+<div class="quote-box">
+  <div class="quote-text">「2026年3月、AIの頂点争いは3強から4強へ──映像制作者が今選ぶべきツールの基準が変わった」</div>
+  <div class="quote-src">── 2026年3月版 主要LLM比較レポートより</div>
+</div>
+<div class="story-card">
+  <a class="story-link" href="https://blog.google/intl/ja-jp/company-news/technology/gemini-25-pro/" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini25prohero.width-1300.png" alt="Gemini 2.5 Pro 無料展開" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#4285f4,#0d47a1,#01579b)';this.style.height='180px'"/>
+    <div class="story-body">
+      <div class="story-tag blue">Google AI</div>
+      <div class="story-h">Gemini 2.5 Pro 無料ユーザー向け展開拡大──LMArena世界1位AIが一般提供、ChatGPT・Claude 4.5と3強時代へ</div>
+      <div class="story-p">GoogleのGemini 2.5 Pro（experimental）が無料ユーザー向けにも展開開始。LMArena世界1位を維持しつつ、WebDev Arenaでもトップクラスのスコアを記録。Anthropicの Claude 4.5・OpenAIのGPT-5.4と並び2026年3月現在の「AIビッグ3」を形成。映像制作・脚本生成・多言語対応において3モデルの特性が異なるため、用途別の使い分けが差別化要因になる。</div>
+      <div class="source-url">🔗 出典：Google Blog Japan / ITmedia AIplus｜Gemini 2.5 Pro 無料展開</div>
+    </div>
+  </a>
+</div>
+<div class="tool-grid">
+  <div class="tool-card">
+    <div class="tool-score">★★★</div>
+    <div class="tool-name">Gemini 2.5 Pro</div>
+    <div class="tool-desc">マルチモーダル<br/>LMArena世界1位</div>
+  </div>
+  <div class="tool-card">
+    <div class="tool-score">★★★</div>
+    <div class="tool-name">GPT-5.4</div>
+    <div class="tool-desc">エージェント<br/>コーディング最強</div>
+  </div>
+  <div class="tool-card">
+    <div class="tool-score">★★★</div>
+    <div class="tool-name">Claude 4.5</div>
+    <div class="tool-desc">長文・推論<br/>丁寧な出力</div>
+  </div>
+</div>
+
+<!-- ===== 3. 検索ワードランキング ===== -->
+<div class="sec-head">🔍 <span>検索ワードランキング</span> TOP8</div>
+<div class="rank-list">
+  <div class="rank-item"><span class="rank-num">1</span><span class="rank-text">AnimeJapan 2026 当日券 東京ビッグサイト アクセス</span><span class="rank-badge">🔥急上昇</span></div>
+  <div class="rank-item"><span class="rank-num">2</span><span class="rank-text">九条の大罪 Netflix 4月2日 キャスト あらすじ</span><span class="rank-badge">🔥急上昇</span></div>
+  <div class="rank-item"><span class="rank-num">3</span><span class="rank-text">Gemini 2.5 Pro 無料 使い方 登録方法</span><span class="rank-badge">NEW</span></div>
+  <div class="rank-item"><span class="rank-num">4</span><span class="rank-text">嵐 東京ドーム 4月1日 2日 セットリスト</span><span class="rank-badge">🔥急上昇</span></div>
+  <div class="rank-item"><span class="rank-num">5</span><span class="rank-text">ChatGPT Gemini Claude 違い 比較 2026</span><span class="rank-badge">NEW</span></div>
+  <div class="rank-item"><span class="rank-num">6</span><span class="rank-text">花畑チャイカ 新衣装 明日 配信 時間</span><span class="rank-badge">🔥急上昇</span></div>
+  <div class="rank-item"><span class="rank-num">7</span><span class="rank-text">hololive Dreams リリース 事前登録 特典</span><span class="rank-badge">↑1</span></div>
+  <div class="rank-item"><span class="rank-num">8</span><span class="rank-text">AnimeJapan 新人クリエイター大賞 応募資格</span><span class="rank-badge">NEW</span></div>
+</div>
+
+<!-- ===== 4. VTuber / ゲーム ===== -->
+<div class="sec-head">🎮 <span>VTuber / ゲーム</span></div>
+<div class="half-grid">
+  <div class="half-card">
+    <a class="half-link" href="https://prtimes.jp/main/html/rd/p/000001228.000030268.html" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://prcdn.freetls.fastly.net/release_image/30268/1228/30268-1228-2225098c7ef3756bb17cc2ab2f34fe4c-3840x2160.png" alt="hololive Dreams" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#0066cc,#004499,#001166)';this.style.height='130px'"/>
+      <div class="story-body">
+        <div class="story-tag blue">ホロライブ</div>
+        <div class="story-h small-h">hololive Dreams 事前登録急増中──4月リリースへ向け50万人達成で特典確定</div>
+        <div class="source-url">🔗 カバー株式会社</div>
+      </div>
+    </a>
+  </div>
+  <div class="half-card">
+    <a class="half-link" href="https://prtimes.jp/main/html/rd/p/000001460.000030865.html" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://prcdn.freetls.fastly.net/release_image/30865/1460/30865-1460-2a1ada72eaffb2fbfe08416cfa4db1fc-1920x1080.png" alt="にじさんじ Goddess Mode Salome Sophia" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#660099,#330055)';this.style.height='130px'"/>
+      <div class="story-body">
+        <div class="story-tag purple">にじさんじ</div>
+        <div class="story-h small-h">にじさんじ「Goddess Mode Type：Salome＆Sophia」グッズ本日18時発売──VTuber×アパレルコラボ最前線</div>
+        <div class="source-url">🔗 ANYCOLOR PR TIMES</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- ===== 5. TODAY'S INSIGHT ===== -->
+<div class="insight-section">
+  <div class="insight-title">💡 TODAY'S INSIGHT ── MMTが今日動くべき4つのこと</div>
+  <div class="insight-item"><span class="insight-num">01</span>AnimeJapan 2026の明日開幕は、アニメ×映像×クリエイター産業が年に一度最大規模で集まる機会。MMTとして参加・視察し、出展社・クリエイターとのネットワーキングを最大化すべきだ。特に「新人クリエイター大賞」の仕組みはMMT独自の人材発掘フローの参考になる。</div>
+  <div class="insight-item"><span class="insight-num">02</span>Gemini 2.5 Pro・GPT-5.4・Claude 4.5の「AIビッグ3」時代において、MMTは「何でもChatGPT」から脱却し、用途別（長文=Claude、コード=GPT、マルチモーダル=Gemini）に使い分けるAI運用ルールを社内で整備すべきフェーズだ。</div>
+  <div class="insight-item"><span class="insight-num">03</span>Netflix「九条の大罪」4/2配信カウントダウンは、羊文学「Dogs」との相乗効果で音楽×OTTの盛り上がりが継続中。MMTがクライアント向けに「ドラマ×主題歌×SNSバズ」の三角形型プロモーション設計を提案する好タイミング。</div>
+  <div class="insight-item"><span class="insight-num">04</span>hololive Dreamsの事前登録50万人達成特典は、ゲームxVTuberのエンゲージメント設計の好事例。MMTがVTuberコラボ企画を提案する際に「マイルストーン型特典解放」の仕組みをクライアントに提案できる。</div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  田村新聞 VOL.019｜2026年3月27日（金）発行<br/>
+  MMT inc. クリエイティブ情報メディア<br/>
+  <a href="../archive.html">📚 バックナンバー</a>
+</div>
+
+</body>
+</html>

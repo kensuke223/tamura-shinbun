@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>田村新聞 VOL.016｜2026年3月24日</title>
+  <meta property="og:title" content="田村新聞 VOL.016｜星街すいせい個人事務所「Studio STELLAR」設立──VTuberアーティスト活動が新フェーズへ"/>
+  <meta property="og:description" content="MMT inc.向けクリエイティブ情報メディア「田村新聞」第16号"/>
+  <meta property="og:image" content="https://prcdn.freetls.fastly.net/release_image/30268/1231/30268-1231-7bd24a0bf625b5be83b438fde84b7fb4-1920x1080.png"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:#f0ebe0;color:#111;font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-size:14px;line-height:1.6;max-width:480px;margin:0 auto;}
+    .masthead-banner{background:#111;padding:14px 14px 12px;display:flex;align-items:flex-end;justify-content:space-between;}
+    .paper-title{font-size:44px;font-weight:900;letter-spacing:-.02em;line-height:1;}
+    .paper-title .t1{color:#fff;}
+    .paper-title .t2{color:#cc0000;}
+    .masthead-right{text-align:right;}
+    .vol-badge{background:#cc0000;color:#fff;font-size:10px;font-weight:900;padding:2px 8px;border-radius:2px;display:inline-block;margin-bottom:5px;letter-spacing:.1em;}
+    .issue-num{font-size:10px;color:#aaa;}
+    .date-bar{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:#f5f0e6;border-bottom:3px solid #cc0000;font-size:9px;color:#666;}
+    .archive-btn{background:#111;color:#fff;font-size:9px;font-weight:700;padding:2px 8px;border-radius:2px;text-decoration:none;}
+    .ticker-wrap{background:#cc0000;overflow:hidden;padding:7px 0;}
+    .ticker-inner{display:flex;animation:ticker 40s linear infinite;}
+    .ticker-item{white-space:nowrap;color:#fff;font-size:11px;font-weight:700;padding:0 30px;letter-spacing:.05em;}
+    @keyframes ticker{0%{transform:translateX(480px);}100%{transform:translateX(-100%);}}
+    .sec-head{background:#111;color:#fff;padding:8px 14px;font-size:12px;font-weight:900;letter-spacing:.1em;margin-top:10px;}
+    .sec-head span{color:#cc0000;}
+    .story-card{background:#fff;margin:2px 0;}
+    .story-img{width:100%;object-fit:cover;display:block;background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);}
+    .story-img.hero{height:220px;}
+    .story-img.main{height:180px;}
+    .story-img.half{height:130px;}
+    .story-body{padding:12px 14px;}
+    .story-tag{display:inline-block;background:#cc0000;color:#fff;font-size:9px;font-weight:900;padding:1px 6px;border-radius:2px;margin-bottom:6px;letter-spacing:.08em;}
+    .story-tag.blue{background:#0066cc;}
+    .story-tag.green{background:#006600;}
+    .story-tag.orange{background:#cc6600;}
+    .story-tag.purple{background:#660099;}
+    .story-h{font-size:17px;font-weight:900;line-height:1.35;margin-bottom:6px;}
+    .story-h.hero-h{font-size:22px;}
+    .story-h.small-h{font-size:13px;}
+    .story-p{font-size:12px;color:#444;line-height:1.6;}
+    .source-url{font-size:10px;color:#888;margin-top:8px;word-break:break-all;}
+    .story-link{text-decoration:none;color:inherit;display:block;}
+    .story-link:hover .story-body{background:#fffaf5;}
+    .half-grid{display:flex;gap:2px;margin:0;}
+    .half-card{flex:1;background:#fff;}
+    .half-link{text-decoration:none;color:inherit;display:block;}
+    .half-link:hover .story-body{background:#fffaf5;}
+    .quote-box{background:#fff;margin:2px 0;padding:16px 14px;border-left:4px solid #cc0000;}
+    .quote-text{font-size:15px;font-weight:900;line-height:1.4;margin-bottom:4px;}
+    .quote-src{font-size:10px;color:#888;}
+    .alert-bar{background:#ffdd00;padding:8px 14px;font-size:11px;font-weight:900;color:#111;letter-spacing:.02em;}
+    .alert-bar span{color:#cc0000;}
+    .rank-list{background:#fff;margin:2px 0;padding:0;}
+    .rank-item{display:flex;align-items:center;padding:8px 14px;border-bottom:1px solid #f0ebe0;}
+    .rank-num{font-size:18px;font-weight:900;color:#cc0000;min-width:28px;}
+    .rank-text{font-size:12px;font-weight:700;flex:1;}
+    .rank-badge{font-size:9px;background:#f0ebe0;padding:1px 6px;border-radius:8px;color:#666;}
+    .num-bar{background:#111;color:#fff;display:flex;justify-content:space-around;padding:12px 10px;text-align:center;margin:2px 0;}
+    .num-item .num-val{font-size:22px;font-weight:900;color:#cc0000;line-height:1;}
+    .num-item .num-label{font-size:9px;color:#aaa;letter-spacing:.02em;}
+    .tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin:2px 0;}
+    .tool-card{background:#fff;padding:12px;text-align:center;}
+    .tool-card img{width:60px;height:60px;border-radius:12px;object-fit:cover;margin-bottom:6px;background:#eee;}
+    .tool-name{font-size:11px;font-weight:900;}
+    .tool-desc{font-size:9px;color:#888;margin-top:2px;}
+    .insight-section{background:#111;padding:18px 14px;margin-top:10px;}
+    .insight-title{color:#cc0000;font-size:14px;font-weight:900;margin-bottom:12px;letter-spacing:.1em;}
+    .insight-item{color:#fff;font-size:12px;line-height:1.6;padding:8px 0;border-bottom:1px solid #333;}
+    .insight-item:last-child{border-bottom:none;}
+    .insight-num{color:#cc0000;font-weight:900;font-size:16px;margin-right:6px;}
+    .footer{background:#111;color:#aaa;padding:20px 14px;font-size:9px;text-align:center;margin-top:10px;line-height:1.8;}
+    .footer a{color:#cc0000;text-decoration:none;}
+  </style>
+</head>
+<body>
+
+<!-- ===== MASTHEAD ===== -->
+<div class="masthead-banner">
+  <div class="paper-title"><span class="t1">田村</span><span class="t2">新聞</span></div>
+  <div class="masthead-right">
+    <div class="vol-badge">VOL.016 第16号</div>
+    <div class="issue-num">2026年3月24日</div>
+  </div>
+</div>
+<div class="date-bar">
+  <span>2026年3月24日（火曜日）</span>
+  <a class="archive-btn" href="../archive.html">📚 バックナンバー</a>
+</div>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <div class="ticker-item">⚡ 星街すいせい、個人事務所「Studio STELLAR」設立──ホロライブ活動継続のまま新フェーズへ</div>
+    <div class="ticker-item">⚡ 嵐デジタルシングル「Five」初日3.2M再生──Oricon史上最高ストリーミング記録</div>
+    <div class="ticker-item">⚡ TikTok Shop Localが3月始動──地域特産品×動画コマースで地方経済活性化へ</div>
+    <div class="ticker-item">⚡ ぶいかる 秋葉原VTuber文化祭3/20〜22に120名が集結、大盛況閉幕</div>
+    <div class="ticker-item">⚡ VTUBER EXPO 2026 GWに秋葉原ベルサール開催決定──入場無料、体験型博覧会</div>
+  </div>
+</div>
+
+<!-- ===== 1. HERO ===== -->
+<div class="sec-head">🔥 <span>TODAY'S HEADLINE</span></div>
+<div class="story-card">
+  <a class="story-link" href="https://prtimes.jp/main/html/rd/p/000001231.000030268.html" target="_blank" rel="noopener">
+    <img class="story-img hero" src="https://prcdn.freetls.fastly.net/release_image/30268/1231/30268-1231-7bd24a0bf625b5be83b438fde84b7fb4-1920x1080.png" alt="星街すいせい Studio STELLAR" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#4400cc,#220066,#110033)';this.style.height='220px'"/>
+    <div class="story-body">
+      <div class="story-tag purple">速報</div>
+      <div class="story-h hero-h">星街すいせい、個人事務所「Studio STELLAR」設立──ホロライブ活動継続のままアーティスト活動が新フェーズへ</div>
+      <div class="story-p">ホロライブ所属VTuberの星街すいせいが3月22日（誕生日）、個人事務所「Studio STELLAR」の設立を発表。ソロ音楽活動・ファンクラブ運営・グッズ販売を個人事務所に移行しつつ、ホロライブVTuberとしての活動は継続する「両立」モデル。公式FC「星詠み」（月額990円〜）も同時開設。9月より横浜・神戸・名古屋・福岡のアリーナツアー「Once Upon a Stellar」全5公演も発表された。</div>
+      <div class="source-url">🔗 出典：カバー株式会社プレスリリース｜Studio STELLAR設立のお知らせ</div>
+    </div>
+  </a>
+</div>
+
+<!-- ===== 2. ライブ・エンタメ業界 ===== -->
+<div class="sec-head">🎤 <span>ライブ・エンタメ業界</span></div>
+<div class="story-card">
+  <a class="story-link" href="https://www.oricon.co.jp/news/2442397/full/" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://ogre.natalie.mu/media/news/music/2026/0313/arashi_wearearashi2026.jpg?impolicy=twitter_card_face_crop" alt="嵐 We are ARASHI" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#003366,#001133,#000022)';this.style.height='180px'"/>
+    <div class="story-body">
+      <div class="story-tag blue">ビッグニュース</div>
+      <div class="story-h">嵐「We are ARASHI」ラストツアー開幕──デジタルシングル「Five」初日3.2M再生でOricon史上最高ストリーミング記録</div>
+      <div class="story-p">嵐の5大ドームツアー「ARASHI LIVE TOUR 2026 We are ARASHI」が3月13日に札幌ドームで開幕し、3日間で約15万人を動員。復活後初のデジタルシングル「Five」は配信初日に3.2M再生を記録し、Oricon日次ストリーミングランキング史上最高を更新。次は4月1〜2日の東京ドーム、最終5月31日まで15公演が続く。経済効果は600億円超の見込み。</div>
+      <div class="source-url">🔗 出典：オリコン｜嵐、熱狂の札幌3日間終了──ラストツアー本格始動</div>
+    </div>
+  </a>
+</div>
+<div class="half-grid">
+  <div class="half-card">
+    <a class="half-link" href="https://e.usen.com/news/news-event/central-2026-3.html" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://prcdn.freetls.fastly.net/release_image/13670/1862/13670-1862-f0f8c5974baf39307981cf34e6c628ae-3158x1776.jpg" alt="CENTRAL 2026" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#cc0000,#660000)';this.style.height='130px'"/>
+      <div class="story-body">
+        <div class="story-tag">注目フェス</div>
+        <div class="story-h small-h">CENTRAL 2026 横浜4会場──4月3〜5日まであと10日</div>
+        <div class="source-url">🔗 encore by USEN</div>
+      </div>
+    </a>
+  </div>
+  <div class="half-card">
+    <a class="half-link" href="https://www.vtuber-expo.com/" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://prcdn.freetls.fastly.net/release_image/98528/31/98528-31-a0cd234b5c15821cb69039a86ac6a831-1920x1080.png" alt="VTUBER EXPO 2026" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#660099,#330055)';this.style.height='130px'"/>
+      <div class="story-body">
+        <div class="story-tag purple">イベント</div>
+        <div class="story-h small-h">VTUBER EXPO 2026 GWに秋葉原で開催決定──入場無料、体験型博覧会</div>
+        <div class="source-url">🔗 VTUBER EXPO 2026</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- ===== 3. SNS・プラットフォーム動向 ===== -->
+<div class="sec-head">📱 <span>SNS・プラットフォーム動向</span></div>
+<div class="quote-box">
+  <div class="quote-text">「地域の生産者とクリエイターをつなぎ、動画の力で日本中に届ける」</div>
+  <div class="quote-src">── TikTok Japan執行役員・安永修章、TikTok Shop Local発表にて</div>
+</div>
+<div class="story-card">
+  <a class="story-link" href="https://prtimes.jp/main/html/rd/p/000001277.000030435.html" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://prcdn.freetls.fastly.net/release_image/30435/1277/30435-1277-a8f0a61f568be714c700d9ac95ae5630-802x270.png" alt="TikTok Shop Local" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#ff0050,#69c9d0,#010101)';this.style.height='180px'"/>
+    <div class="story-body">
+      <div class="story-tag">SNS</div>
+      <div class="story-h">TikTok Shop Local 3月始動──地域特産品×動画コマースで地方経済を動かす</div>
+      <div class="story-p">TikTokが2月に発表した新プロジェクト「TikTok Shop Local」が3月より第一弾を始動。地域の特産品・中小事業者の商品をクリエイターの動画・ライブ配信で全国へ。TikTok Shopの日本上陸半年で購入者20倍超・セラー数5万店（3倍）・流通総額の70%がコンテンツ起点という急成長が背景にある。</div>
+      <div class="source-url">🔗 出典：TikTok Japan / PR TIMES｜TikTok Shop Local始動</div>
+    </div>
+  </a>
+</div>
+<div class="alert-bar">📊 <span>DATA</span>｜TikTok Shop日本の年間GMVは2026年末に約1,283億円規模に到達する見通し──コマースインノベーション予測</div>
+
+<!-- ===== 4. 検索ワードランキング ===== -->
+<div class="sec-head">🔍 <span>検索ワードランキング</span> TOP8</div>
+<div class="rank-list">
+  <div class="rank-item"><span class="rank-num">1</span><span class="rank-text">星街すいせい Studio STELLAR 個人事務所</span><span class="rank-badge">🔥急上昇</span></div>
+  <div class="rank-item"><span class="rank-num">2</span><span class="rank-text">嵐 We are ARASHI 東京ドーム チケット</span><span class="rank-badge">🔥急上昇</span></div>
+  <div class="rank-item"><span class="rank-num">3</span><span class="rank-text">TikTok Shop Local 地域 特産品</span><span class="rank-badge">NEW</span></div>
+  <div class="rank-item"><span class="rank-num">4</span><span class="rank-text">ぶいかる 秋葉原 VTuber文化祭 感想</span><span class="rank-badge">↑2</span></div>
+  <div class="rank-item"><span class="rank-num">5</span><span class="rank-text">VTUBER EXPO 2026 チケット 秋葉原</span><span class="rank-badge">NEW</span></div>
+  <div class="rank-item"><span class="rank-num">6</span><span class="rank-text">CENTRAL 2026 横浜 タイムテーブル</span><span class="rank-badge">↑4</span></div>
+  <div class="rank-item"><span class="rank-num">7</span><span class="rank-text">AI動画生成ツール ランキング 2026</span><span class="rank-badge">→</span></div>
+  <div class="rank-item"><span class="rank-num">8</span><span class="rank-text">にじさんじ WBC MLB 配信</span><span class="rank-badge">NEW</span></div>
+</div>
+
+<!-- ===== 5. 投稿・コンテンツムーブメント ===== -->
+<div class="sec-head">📊 <span>投稿・コンテンツムーブメント</span></div>
+<div class="story-card">
+  <a class="story-link" href="https://panora.tokyo/archives/136016" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://prcdn.freetls.fastly.net/release_image/26429/8/26429-8-b91c141a41cc5ceb7ab0abcb1ba0f2c1-1920x1080.jpg" alt="ぶいかる 秋葉原" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#cc6600,#663300)';this.style.height='180px'"/>
+    <div class="story-body">
+      <div class="story-tag orange">レポート</div>
+      <div class="story-h">VTuber文化祭「ぶいかる」秋葉原3日間閉幕──120名が集結、ライブ・1on1・企業ブースで盛況</div>
+      <div class="story-p">パノラプロが主催した「VTuber文化祭 ぶいかる」が3月20〜22日に秋葉原UDXギャラリー・サボニウス広場・秋葉原エンタスで開催。120名近くのVTuberが参加し、音楽ライブ・トークライブ・1on1・企業ブース・推しのぼり展示など盛りだくさんの内容で大盛況のうちに閉幕。VTuberファン文化のリアル化が加速している。</div>
+      <div class="source-url">🔗 出典：PANORA｜ぶいかる 秋葉原3日間まとめ</div>
+    </div>
+  </a>
+</div>
+<div class="alert-bar">⚡ <span>注目</span>｜にじさんじ舞元啓介、WBC MLB Spring TrainingのNetflix公式クリエイターに就任──野球×VTuberの新展開</div>
+
+<!-- ===== 6. VTuber / Vsinger ===== -->
+<div class="sec-head">🎤 <span>VTuber / Vsinger</span></div>
+<div class="story-card">
+  <a class="story-link" href="https://kai-you.net/article/94792" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://prcdn.freetls.fastly.net/release_image/30865/1415/30865-1415-3b45897c9ae5fc7e742518509307b3e3-1920x1080.png" alt="にじさんじ水面まどか" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#0066cc,#003366)';this.style.height='180px'"/>
+    <div class="story-body">
+      <div class="story-tag blue">VTuber</div>
+      <div class="story-h">にじさんじ水面まどか、YouTube登録者10万人突破──2026年デビューの新人ギャルVライバーが快速成長</div>
+      <div class="story-p">にじさんじ所属のバーチャルライバー・水面まどかが3月3日にYouTubeチャンネル登録者10万人を突破。2026年デビューの新人ながら独特の「ギャルキャラ」と高頻度配信で急成長。個性的なVライバーが競合ひしめくにじさんじで存在感を示している。</div>
+      <div class="source-url">🔗 出典：KAI-YOU｜水面まどか、登録者10万人突破</div>
+    </div>
+  </a>
+</div>
+<div class="half-grid">
+  <div class="half-card">
+    <a class="half-link" href="https://prtimes.jp/main/html/rd/p/000000031.000098528.html" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://prcdn.freetls.fastly.net/release_image/98528/31/98528-31-a0cd234b5c15821cb69039a86ac6a831-1920x1080.png" alt="VTUBER EXPO 2026" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#660099,#330055)';this.style.height='130px'"/>
+      <div class="story-body">
+        <div class="story-tag purple">イベント</div>
+        <div class="story-h small-h">VTUBER EXPO 2026 GW秋葉原──「なれる・話せる・遊べる・知れる」VTuber体験型博覧会</div>
+        <div class="source-url">🔗 PR TIMES</div>
+      </div>
+    </a>
+  </div>
+  <div class="half-card">
+    <a class="half-link" href="https://kai-you.net/article/94818" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://prcdn.freetls.fastly.net/release_image/30862/185/30862-185-87c1716430efe40ec5740ca061cd693b-1920x1080.jpg" alt="舞元啓介 WBC Netflix" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#cc0000,#660000)';this.style.height='130px'"/>
+      <div class="story-body">
+        <div class="story-tag">コラボ</div>
+        <div class="story-h small-h">舞元啓介、WBC Netflix公式クリエイターに──野球愛でMLBを盛り上げる</div>
+        <div class="source-url">🔗 KAI-YOU</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- ===== 7. 縦型動画トレンド ===== -->
+<div class="sec-head">📐 <span>縦型動画トレンド</span></div>
+<div class="story-card">
+  <a class="story-link" href="https://tsuhan-ec.jp/article/2026/02/20/1377.html" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://tsuhan-ec.jp/wp-content/themes/commerce-innovation/images/og-default.jpg" alt="TikTok Shop コンテンツ起点" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#ff0050,#550022)';this.style.height='180px'"/>
+    <div class="story-body">
+      <div class="story-tag orange">マーケ</div>
+      <div class="story-h">TikTok Shop、流通70%が「コンテンツ起点」──購入者20倍超の急成長が示す動画コマースの本質</div>
+      <div class="story-p">TikTok Shopの日本上陸半年レポートによると、流通総額の約70%が動画・ライブ配信経由の「ディスカバリーEC」によるもの。購入者数は初期比20倍超、セラー数も5万店に達した。「検索しない買い物」が日本にも定着しつつあり、コンテンツ制作力が直接的な販売力に直結する新時代が到来している。</div>
+      <div class="source-url">🔗 出典：Commerce Innovation｜TikTok Shop日本 半年成長レポート</div>
+    </div>
+  </a>
+</div>
+<div class="num-bar">
+  <div class="num-item"><div class="num-val">70%</div><div class="num-label">コンテンツ起点の購買</div></div>
+  <div class="num-item"><div class="num-val">20倍</div><div class="num-label">購入者数の成長</div></div>
+  <div class="num-item"><div class="num-val">5万店</div><div class="num-label">セラー数（3倍）</div></div>
+</div>
+
+<!-- ===== 8. 映像クリエイティブ業界 ===== -->
+<div class="sec-head">🎬 <span>映像クリエイティブ業界</span></div>
+<div class="story-card">
+  <a class="story-link" href="https://videosalon.jp/news/vs202605" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://videosalon.jp/wp-content/uploads/2023/01/video-salon-logo.jpg" alt="VIDEO SALON 生成AI特集" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#333333,#111111)';this.style.height='180px'"/>
+    <div class="story-body">
+      <div class="story-tag">業界動向</div>
+      <div class="story-h">VIDEO SALON 5月号「加速する生成AI」特集──MV・アニメ・映画で実際にAIを使うクリエイターたちの現場</div>
+      <div class="story-p">映像業界の専門誌VIDEO SALONが2026年5月号で「加速する生成AI」を特集。MV・アニメ・映画などの分野で実際に生成AIを取り入れた制作に取り組むクリエイターを紹介。効率化・表現拡張の利点と、判断・責任・オリジナリティの課題を現場目線で深掘りする。3月2日〜中旬には連動ウェビナーも順次開催。</div>
+      <div class="source-url">🔗 出典：VIDEO SALON.web｜特集「加速する生成AI」ウェビナー開催</div>
+    </div>
+  </a>
+</div>
+<div class="quote-box">
+  <div class="quote-text">制作費1/10・納期1/8の「AI動画センター」がいま、映像業界の価格破壊を静かに進めている</div>
+  <div class="quote-src">── サイバーエージェント「日本一のAI動画を追求するセンター」設立発表より</div>
+</div>
+
+<!-- ===== 9. AI×映像制作ツール ===== -->
+<div class="sec-head">🤖 <span>AI×映像制作ツール</span></div>
+<div class="story-card">
+  <a class="story-link" href="https://miralab.co.jp/media/best_ai_video_generators/" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://miralab.co.jp/wp-content/uploads/2026/03/ai-video-generators-2026.jpg" alt="AI動画生成ツール比較" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#4285f4,#0d47a1)';this.style.height='180px'"/>
+    <div class="story-body">
+      <div class="story-tag blue">AI比較</div>
+      <div class="story-h">【2026年3月版】動画生成AIランキング最新13選──Sora 2・Veo 3.1・Kling 3.0が3強に</div>
+      <div class="story-p">MiraLab AIの最新ランキングによると、2026年3月時点での動画生成AIは「Sora 2（OpenAI）」「Veo 3.1（Google）」「Kling 3.0（Kuaishou）」が3強。コスト面ではKling（月5ドル・300クレジット）が優位。縦型動画ネイティブ生成・4Kアップスケーリング・音声同期機能が競争軸となっている。AI動画生成市場は2026年に10.4億ドルへ成長見通し（前年比22.4%増）。</div>
+      <div class="source-url">🔗 出典：MiraLab AI｜2026年3月版 動画生成AIランキング</div>
+    </div>
+  </a>
+</div>
+<div class="tool-grid">
+  <div class="tool-card">
+    <img src="https://openai.com/content/images/2024/01/hero-sorafull.png" alt="Sora 2" style="width:60px;height:60px;border-radius:12px;object-fit:cover;background:#eee;" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#10a37f,#1a7f5a)'"/>
+    <div class="tool-name">Sora 2</div>
+    <div class="tool-desc">映像＋音声統合生成<br/>Storyboard機能</div>
+  </div>
+  <div class="tool-card">
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_DeepMind_Veo3_1_Blog_image.max-1440x810.png" alt="Veo 3.1" style="width:60px;height:60px;border-radius:12px;object-fit:cover;background:#eee;" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#4285f4,#0d47a1)'"/>
+    <div class="tool-name">Veo 3.1</div>
+    <div class="tool-desc">縦型対応＆4K<br/>音声同時生成</div>
+  </div>
+  <div class="tool-card">
+    <img src="https://klingai.com/assets/images/common/share-icon.png" alt="Kling 3.0" style="width:60px;height:60px;border-radius:12px;object-fit:cover;background:#eee;" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='#333'"/>
+    <div class="tool-name">Kling 3.0</div>
+    <div class="tool-desc">コスパ最強<br/>月5ドル300回</div>
+  </div>
+  <div class="tool-card">
+    <img src="https://runway.com/images/og-image.jpg" alt="Runway Gen-4.5" style="width:60px;height:60px;border-radius:12px;object-fit:cover;background:#eee;" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='#333'"/>
+    <div class="tool-name">Runway Gen-4.5</div>
+    <div class="tool-desc">470億円調達<br/>プロ映像制作</div>
+  </div>
+</div>
+
+<!-- ===== 10. 海外クリエイティブトレンド ===== -->
+<div class="sec-head">🌏 <span>海外クリエイティブトレンド</span></div>
+<div class="story-card">
+  <a class="story-link" href="https://www.group.dentsu.com/jp/news/release/001577.html" target="_blank" rel="noopener">
+    <img class="story-img main" src="https://www.gii.co.jp/img/common/gii-ogp.png" alt="世界広告費 2026" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#003366,#001133)';this.style.height='180px'"/>
+    <div class="story-body">
+      <div class="story-tag blue">グローバル</div>
+      <div class="story-h">AI動画生成市場2026年に10.4億ドル到達予測──前年比22.4%成長でコンテンツ制作の構造変化が加速</div>
+      <div class="story-p">GIIの最新レポートによると、AI動画生成市場は2025年の8.5億ドルから2026年には10.4億ドルへ22.4%成長する見通し。生成AIで制作されたメディアは2025年比3倍に拡大。電通グループの2026年世界広告費予測では初の1兆ドル超えが見込まれ、テクノロジー分野が10.3%と最高成長率。AI×動画がグローバル広告の構造変化を主導している。</div>
+      <div class="source-url">🔗 出典：GII市場レポート / 電通グループ｜2026年グローバル広告市場予測</div>
+    </div>
+  </a>
+</div>
+
+<!-- ===== 11. 競合・同業者動向 ===== -->
+<div class="sec-head">🏢 <span>競合・同業者動向</span></div>
+<div class="half-grid">
+  <div class="half-card">
+    <a class="half-link" href="https://videosalon.jp/news/" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://videosalon.jp/wp-content/uploads/2023/01/video-salon-logo.jpg" alt="VIDEO SALON" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#333,#111)';this.style.height='130px'"/>
+      <div class="story-body">
+        <div class="story-tag">業界</div>
+        <div class="story-h small-h">映像プロダクション、AI導入コストが急低下──中小制作会社にも生成AI本格活用の波</div>
+        <div class="source-url">🔗 VIDEO SALON</div>
+      </div>
+    </a>
+  </div>
+  <div class="half-card">
+    <a class="half-link" href="https://castas.jp/journal/cm-production-companies-japan-2026" target="_blank" rel="noopener">
+      <img class="story-img half" src="https://service.xenobrain.jp/wp-content/uploads/forecastresults/video-market-og.png" alt="CM制作会社" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';this.style.background='linear-gradient(135deg,#666,#333)';this.style.height='130px'"/>
+      <div class="story-body">
+        <div class="story-tag">ガイド</div>
+        <div class="story-h small-h">映像業界50社ガイド2026──「AI対応力」が制作会社選定の新基準に</div>
+        <div class="source-url">🔗 CASTAS</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- ===== 12. TODAY'S INSIGHT ===== -->
+<div class="insight-section">
+  <div class="insight-title">💡 TODAY'S INSIGHT ── MMTが今日動くべき4つのこと</div>
+  <div class="insight-item"><span class="insight-num">01</span>星街すいせいの個人事務所「Studio STELLAR」設立は、VTuberとアーティストの「両立」モデルが成立する前例になる。大手プロダクションとの契約を維持しつつ独自コンテンツを展開する形は、MMTが今後のタレント・IPとの協業交渉で参考にすべき新しい業界構造だ。</div>
+  <div class="insight-item"><span class="insight-num">02</span>TikTok Shopの流通70%がコンテンツ起点という事実は、映像制作の価値が「広告物」から「購買導線」へ変化していることを示す。MMTはクライアント向け提案に「動画コマース対応コンテンツパッケージ」を組み込み、EC成果に直結する制作ビジネスを開拓すべき。</div>
+  <div class="insight-item"><span class="insight-num">03</span>嵐のラストツアーは大型ライブ映像制作・配信の商機。同規模イベントの映像チームへの実績アプローチは今が適時。また「We are ARASHI」のような感情価値の高いコンテンツで動員される視聴者層は、MMTのクリエイティブと親和性が高い。</div>
+  <div class="insight-item"><span class="insight-num">04</span>VIDEO SALONの生成AI特集はクライアント・業界全体の関心を示している。MMTは「AI活用事例」を自社ケーススタディとして対外発信し、AI対応制作会社としてのポジショニングを確立するタイミングが来ている。</div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  田村新聞 VOL.016｜2026年3月24日（火）発行<br/>
+  MMT inc. クリエイティブ情報メディア<br/>
+  <a href="../archive.html">📚 バックナンバー</a>
+</div>
+
+</body>
+</html>
