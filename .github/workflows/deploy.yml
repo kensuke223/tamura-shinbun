@@ -13,12 +13,10 @@ jobs:
       deployments: write
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: d58af20a25988d8c3647b29bc688bf09
-          projectName: tamura-shinbun
-          directory: .
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          command: pages deploy . --project-name=tamura-shinbun --branch=main
